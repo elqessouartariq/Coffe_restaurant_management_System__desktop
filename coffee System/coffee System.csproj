@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{600D79D6-82B8-47A4-8755-E5E3ABA2E8E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>coffee_System</RootNamespace>
+    <AssemblyName>coffee System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Article.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Article.Designer.cs">
+      <DependentUpon>Article.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Credit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Credit.Designer.cs">
+      <DependentUpon>Credit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepenseForm.Designer.cs">
+      <DependentUpon>DepenseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Items\prd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Items\prd.Designer.cs">
+      <DependentUpon>prd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipe.Designer.cs">
+      <DependentUpon>Recipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reglement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reglement.Designer.cs">
+      <DependentUpon>Reglement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Nombrevenduejour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Nombrevenduejour.Designer.cs">
+      <DependentUpon>Nombrevenduejour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\Totalvendumois.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Totalvendumois.Designer.cs">
+      <DependentUpon>Totalvendumois.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Totolearningmois.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Totolearningmois.Designer.cs">
+      <DependentUpon>Totolearningmois.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_form.Designer.cs">
+      <DependentUpon>Settings_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Settings\Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tableaubord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tableaubord.Designer.cs">
+      <DependentUpon>tableaubord.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Article.resx">
+      <DependentUpon>Article.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Credit.resx">
+      <DependentUpon>Credit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepenseForm.resx">
+      <DependentUpon>DepenseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items\prd.resx">
+      <DependentUpon>prd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipe.resx">
+      <DependentUpon>Recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reglement.resx">
+      <DependentUpon>Reglement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Nombrevenduejour.resx">
+      <DependentUpon>Nombrevenduejour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Settings\Totalvendumois.resx">
+      <DependentUpon>Totalvendumois.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Totolearningmois.resx">
+      <DependentUpon>Totolearningmois.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings_form.resx">
+      <DependentUpon>Settings_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tableaubord.resx">
+      <DependentUpon>tableaubord.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-users-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-wifi-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-services-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sales-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employee-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-expenses-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-street-food-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1557682250-33bd709cbe85.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1557682250-33bd709cbe851.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconic-image-social-networks-anonymous-very-personal-character-profile-over-bright-violet-background-148178936.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1065779666-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-statistics-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-asian-street-food-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4fdd069d-3095-4265-99ef-87f4dd01d1e7.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-03-01 at 16.45.21.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-16 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-filter-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-credit-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-diversity-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-recipe-book-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icons8-afficher-toutes-les-vues-50 %281%29.png" />
+    <Content Include="Resources\icons8-dessert-60.png" />
+    <Content Include="Resources\icons8-effacer-30.png" />
+    <Content Include="Resources\icons8-food-64 %281%29.png" />
+    <Content Include="Resources\icons8-juice-64.png" />
+    <Content Include="Resources\icons8-moins-50.png" />
+    <Content Include="Resources\icons8-réduire-la-fenêtre-24.png" />
+    <Content Include="Resources\icons8-tasse-50.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
