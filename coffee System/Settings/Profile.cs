@@ -12,11 +12,13 @@ namespace coffee_System.Settings
 {
     public partial class Profile : UserControl
     {
-        public Profile()
+        public Profile(String Name, PictureBox pic)
         {
             InitializeComponent();
+            AdminName.Text = Name;
+            AdminPicture.Image = pic.Image;
         }
 
-      
+        
     }
 }

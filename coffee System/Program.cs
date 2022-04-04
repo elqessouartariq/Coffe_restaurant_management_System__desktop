@@ -8,6 +8,7 @@ namespace coffee_System
 {
     internal static class Program
     {
+        public static Credit cr;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,6 +17,7 @@ namespace coffee_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            cr = new Credit();
             Application.Run(new Settings_form());
         }
     }

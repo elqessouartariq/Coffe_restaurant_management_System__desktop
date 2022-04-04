@@ -1168,19 +1168,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.prd1);
-            this.flowLayoutPanel1.Controls.Add(this.prd2);
-            this.flowLayoutPanel1.Controls.Add(this.prd3);
-            this.flowLayoutPanel1.Controls.Add(this.prd4);
-            this.flowLayoutPanel1.Controls.Add(this.prd5);
-            this.flowLayoutPanel1.Controls.Add(this.prd6);
-            this.flowLayoutPanel1.Controls.Add(this.prd7);
-            this.flowLayoutPanel1.Controls.Add(this.prd8);
-            this.flowLayoutPanel1.Controls.Add(this.prd9);
-            this.flowLayoutPanel1.Controls.Add(this.prd10);
-            this.flowLayoutPanel1.Controls.Add(this.prd11);
-            this.flowLayoutPanel1.Controls.Add(this.prd12);
-            this.flowLayoutPanel1.Controls.Add(this.prd13);
+            
             this.flowLayoutPanel1.Location = new System.Drawing.Point(176, 288);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(20);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
