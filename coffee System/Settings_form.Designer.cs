@@ -29,44 +29,65 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings_form));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.Settingspanel = new System.Windows.Forms.Panel();
-            this.profile1 = new coffee_System.Settings.Profile();
+            this.Profile_Panel = new System.Windows.Forms.Panel();
             this.serverbtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.depensebtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.articlebtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Categoriebtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.recipebtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Creditbtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.Morestatisticsbtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.nombrevenduejour1 = new coffee_System.NewFolder1.Nombrevenduejour();
-            this.totalvendumois1 = new coffee_System.Settings.Totalvendumois();
+            this.earninglinechart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.EarningPerMonthPie = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.statisticsdatepicker = new System.Windows.Forms.DateTimePicker();
+            this.EarningPerMonth = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Total_earning_counter_year = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel11 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Total_earning_counter_month = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel14 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Total_earning_counter_day = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.adminnamelbl = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.totolearningmois1 = new coffee_System.Settings.Totolearningmois();
             this.Settingspanel.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.panel4.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.earninglinechart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EarningPerMonthPie)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EarningPerMonth)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Settingspanel
             // 
             this.Settingspanel.BackColor = System.Drawing.Color.White;
-            this.Settingspanel.Controls.Add(this.profile1);
+            this.Settingspanel.Controls.Add(this.Profile_Panel);
             this.Settingspanel.Controls.Add(this.serverbtn);
             this.Settingspanel.Controls.Add(this.depensebtn);
             this.Settingspanel.Controls.Add(this.articlebtn);
@@ -76,17 +97,15 @@
             this.Settingspanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.Settingspanel.Location = new System.Drawing.Point(0, 0);
             this.Settingspanel.Name = "Settingspanel";
-            this.Settingspanel.Size = new System.Drawing.Size(246, 685);
+            this.Settingspanel.Size = new System.Drawing.Size(246, 785);
             this.Settingspanel.TabIndex = 0;
             // 
-            // profile1
+            // Profile_Panel
             // 
-            this.profile1.BackColor = System.Drawing.Color.Transparent;
-            this.profile1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.profile1.Location = new System.Drawing.Point(24, 12);
-            this.profile1.Name = "profile1";
-            this.profile1.Size = new System.Drawing.Size(185, 177);
-            this.profile1.TabIndex = 22;
+            this.Profile_Panel.Location = new System.Drawing.Point(26, 12);
+            this.Profile_Panel.Name = "Profile_Panel";
+            this.Profile_Panel.Size = new System.Drawing.Size(191, 183);
+            this.Profile_Panel.TabIndex = 22;
             // 
             // serverbtn
             // 
@@ -308,143 +327,313 @@
             this.Creditbtn.TextFont = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
             this.Creditbtn.Click += new System.EventHandler(this.Creditbtn_Click);
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.bunifuCustomDataGrid1);
-            this.panel3.Controls.Add(this.bunifuLabel3);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(958, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(386, 685);
-            this.panel3.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::coffee_System.Properties.Resources._4fdd069d_3095_4265_99ef_87f4dd01d1e7;
-            this.pictureBox1.Location = new System.Drawing.Point(332, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 34);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // bunifuCustomDataGrid1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(25, 108);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(349, 543);
-            this.bunifuCustomDataGrid1.TabIndex = 7;
-            // 
-            // bunifuLabel3
-            // 
-            this.bunifuLabel3.AutoEllipsis = false;
-            this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Cascadia Code SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
-            this.bunifuLabel3.Location = new System.Drawing.Point(64, 66);
-            this.bunifuLabel3.Name = "bunifuLabel3";
-            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(459, 46);
-            this.bunifuLabel3.TabIndex = 6;
-            this.bunifuLabel3.Text = "Dernieres Produis Vendus";
-            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.panel4.Controls.Add(this.Morestatisticsbtn);
-            this.panel4.Controls.Add(this.flowLayoutPanel1);
+            this.panel4.Controls.Add(this.earninglinechart);
+            this.panel4.Controls.Add(this.EarningPerMonthPie);
+            this.panel4.Controls.Add(this.bunifuLabel6);
+            this.panel4.Controls.Add(this.statisticsdatepicker);
+            this.panel4.Controls.Add(this.EarningPerMonth);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Controls.Add(this.adminnamelbl);
             this.panel4.Controls.Add(this.bunifuLabel4);
             this.panel4.Controls.Add(this.bunifuLabel2);
-            this.panel4.Controls.Add(this.bunifuImageButton1);
             this.panel4.Controls.Add(this.bunifuLabel1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(246, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(712, 685);
+            this.panel4.Size = new System.Drawing.Size(1459, 785);
             this.panel4.TabIndex = 2;
             // 
-            // Morestatisticsbtn
+            // earninglinechart
             // 
-            this.Morestatisticsbtn.Active = false;
-            this.Morestatisticsbtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(255)))), ((int)(((byte)(249)))));
-            this.Morestatisticsbtn.BackColor = System.Drawing.Color.Transparent;
-            this.Morestatisticsbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Morestatisticsbtn.BorderRadius = 0;
-            this.Morestatisticsbtn.ButtonText = "More Statistics";
-            this.Morestatisticsbtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Morestatisticsbtn.DisabledColor = System.Drawing.Color.Gray;
-            this.Morestatisticsbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(81)))), ((int)(((byte)(189)))));
-            this.Morestatisticsbtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.Morestatisticsbtn.Iconimage = global::coffee_System.Properties.Resources.icons8_statistics_32;
-            this.Morestatisticsbtn.Iconimage_right = null;
-            this.Morestatisticsbtn.Iconimage_right_Selected = null;
-            this.Morestatisticsbtn.Iconimage_Selected = null;
-            this.Morestatisticsbtn.IconMarginLeft = 0;
-            this.Morestatisticsbtn.IconMarginRight = 0;
-            this.Morestatisticsbtn.IconRightVisible = true;
-            this.Morestatisticsbtn.IconRightZoom = 0D;
-            this.Morestatisticsbtn.IconVisible = true;
-            this.Morestatisticsbtn.IconZoom = 90D;
-            this.Morestatisticsbtn.IsTab = false;
-            this.Morestatisticsbtn.Location = new System.Drawing.Point(511, 290);
-            this.Morestatisticsbtn.Name = "Morestatisticsbtn";
-            this.Morestatisticsbtn.Normalcolor = System.Drawing.Color.Transparent;
-            this.Morestatisticsbtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(253)))), ((int)(((byte)(251)))));
-            this.Morestatisticsbtn.OnHoverTextColor = System.Drawing.Color.Black;
-            this.Morestatisticsbtn.selected = false;
-            this.Morestatisticsbtn.Size = new System.Drawing.Size(176, 42);
-            this.Morestatisticsbtn.TabIndex = 16;
-            this.Morestatisticsbtn.Text = "More Statistics";
-            this.Morestatisticsbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Morestatisticsbtn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(81)))), ((int)(((byte)(189)))));
-            this.Morestatisticsbtn.TextFont = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
+            chartArea1.Name = "ChartArea1";
+            this.earninglinechart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.earninglinechart.Legends.Add(legend1);
+            this.earninglinechart.Location = new System.Drawing.Point(747, 390);
+            this.earninglinechart.Name = "earninglinechart";
+            series1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(113)))), ((int)(((byte)(189)))));
+            series1.BorderColor = System.Drawing.Color.WhiteSmoke;
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series1.IsValueShownAsLabel = true;
+            series1.LabelFormat = "# DH";
+            series1.Legend = "Legend1";
+            series1.Name = "Products";
+            series1.ShadowColor = System.Drawing.Color.Black;
+            series1.YValuesPerPoint = 3;
+            this.earninglinechart.Series.Add(series1);
+            this.earninglinechart.Size = new System.Drawing.Size(700, 371);
+            this.earninglinechart.TabIndex = 25;
+            title1.Name = "Title1";
+            title1.Text = "Value of Top 4 Sales ";
+            this.earninglinechart.Titles.Add(title1);
             // 
-            // flowLayoutPanel1
+            // EarningPerMonthPie
             // 
-            this.flowLayoutPanel1.Controls.Add(this.nombrevenduejour1);
-            this.flowLayoutPanel1.Controls.Add(this.totalvendumois1);
-            this.flowLayoutPanel1.Controls.Add(this.totolearningmois1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(54, 130);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(633, 155);
-            this.flowLayoutPanel1.TabIndex = 5;
+            chartArea2.Area3DStyle.Enable3D = true;
+            chartArea2.Area3DStyle.Inclination = 25;
+            chartArea2.Name = "ChartArea1";
+            this.EarningPerMonthPie.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.EarningPerMonthPie.Legends.Add(legend2);
+            this.EarningPerMonthPie.Location = new System.Drawing.Point(747, 70);
+            this.EarningPerMonthPie.Name = "EarningPerMonthPie";
+            this.EarningPerMonthPie.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(113)))), ((int)(((byte)(189)))));
+            series2.BorderColor = System.Drawing.Color.WhiteSmoke;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            series2.IsValueShownAsLabel = true;
+            series2.LabelFormat = "#.##%";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            series2.ShadowColor = System.Drawing.Color.Black;
+            series2.YValuesPerPoint = 3;
+            this.EarningPerMonthPie.Series.Add(series2);
+            this.EarningPerMonthPie.Size = new System.Drawing.Size(700, 263);
+            this.EarningPerMonthPie.TabIndex = 23;
+            title2.Alignment = System.Drawing.ContentAlignment.TopLeft;
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
+            title2.Name = "Title1";
+            title2.Text = "% Of Each Server Per Year";
+            this.EarningPerMonthPie.Titles.Add(title2);
             // 
-            // nombrevenduejour1
+            // bunifuLabel6
             // 
-            this.nombrevenduejour1.Location = new System.Drawing.Point(3, 3);
-            this.nombrevenduejour1.Name = "nombrevenduejour1";
-            this.nombrevenduejour1.Size = new System.Drawing.Size(198, 146);
-            this.nombrevenduejour1.TabIndex = 0;
+            this.bunifuLabel6.AutoEllipsis = false;
+            this.bunifuLabel6.CursorType = null;
+            this.bunifuLabel6.Font = new System.Drawing.Font("Cascadia Code SemiLight", 12F);
+            this.bunifuLabel6.Location = new System.Drawing.Point(365, 304);
+            this.bunifuLabel6.Name = "bunifuLabel6";
+            this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel6.Size = new System.Drawing.Size(147, 23);
+            this.bunifuLabel6.TabIndex = 22;
+            this.bunifuLabel6.Text = "Year  Statistics:";
+            this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // totalvendumois1
+            // statisticsdatepicker
             // 
-            this.totalvendumois1.Location = new System.Drawing.Point(207, 3);
-            this.totalvendumois1.Name = "totalvendumois1";
-            this.totalvendumois1.Size = new System.Drawing.Size(198, 146);
-            this.totalvendumois1.TabIndex = 1;
+            this.statisticsdatepicker.CustomFormat = "yyyy";
+            this.statisticsdatepicker.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statisticsdatepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.statisticsdatepicker.Location = new System.Drawing.Point(151, 300);
+            this.statisticsdatepicker.Name = "statisticsdatepicker";
+            this.statisticsdatepicker.ShowUpDown = true;
+            this.statisticsdatepicker.Size = new System.Drawing.Size(200, 33);
+            this.statisticsdatepicker.TabIndex = 21;
+            this.statisticsdatepicker.ValueChanged += new System.EventHandler(this.statisticsdatepicker_ValueChanged);
+            // 
+            // EarningPerMonth
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.EarningPerMonth.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.EarningPerMonth.Legends.Add(legend3);
+            this.EarningPerMonth.Location = new System.Drawing.Point(48, 375);
+            this.EarningPerMonth.Name = "EarningPerMonth";
+            series3.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight;
+            series3.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(113)))), ((int)(((byte)(189)))));
+            series3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(113)))), ((int)(((byte)(189)))));
+            series3.ChartArea = "ChartArea1";
+            series3.Color = System.Drawing.Color.Teal;
+            series3.IsValueShownAsLabel = true;
+            series3.LabelFormat = "# DH";
+            series3.Legend = "Legend1";
+            series3.Name = "Months";
+            series3.ShadowColor = System.Drawing.Color.Black;
+            series3.YValuesPerPoint = 3;
+            this.EarningPerMonth.Series.Add(series3);
+            this.EarningPerMonth.Size = new System.Drawing.Size(654, 386);
+            this.EarningPerMonth.TabIndex = 20;
+            title3.Name = "Title1";
+            title3.Text = "Earning Per Month of th Year";
+            this.EarningPerMonth.Titles.Add(title3);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.Total_earning_counter_year);
+            this.panel5.Controls.Add(this.bunifuLabel13);
+            this.panel5.Controls.Add(this.bunifuLabel11);
+            this.panel5.Location = new System.Drawing.Point(518, 124);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(198, 137);
+            this.panel5.TabIndex = 19;
+            // 
+            // Total_earning_counter_year
+            // 
+            this.Total_earning_counter_year.AutoEllipsis = false;
+            this.Total_earning_counter_year.CursorType = null;
+            this.Total_earning_counter_year.Font = new System.Drawing.Font("Fira Code", 21.75F, System.Drawing.FontStyle.Bold);
+            this.Total_earning_counter_year.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(73)))), ((int)(((byte)(134)))));
+            this.Total_earning_counter_year.Location = new System.Drawing.Point(40, 49);
+            this.Total_earning_counter_year.Name = "Total_earning_counter_year";
+            this.Total_earning_counter_year.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Total_earning_counter_year.Size = new System.Drawing.Size(122, 47);
+            this.Total_earning_counter_year.TabIndex = 13;
+            this.Total_earning_counter_year.Text = "1000000";
+            this.Total_earning_counter_year.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Total_earning_counter_year.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel13
+            // 
+            this.bunifuLabel13.AutoEllipsis = false;
+            this.bunifuLabel13.CursorType = null;
+            this.bunifuLabel13.Font = new System.Drawing.Font("Cascadia Code SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
+            this.bunifuLabel13.Location = new System.Drawing.Point(27, 9);
+            this.bunifuLabel13.Name = "bunifuLabel13";
+            this.bunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel13.Size = new System.Drawing.Size(146, 27);
+            this.bunifuLabel13.TabIndex = 12;
+            this.bunifuLabel13.Text = "Total Earning";
+            this.bunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel13.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel11
+            // 
+            this.bunifuLabel11.AutoEllipsis = false;
+            this.bunifuLabel11.CursorType = null;
+            this.bunifuLabel11.Font = new System.Drawing.Font("Fira Code", 8.249999F);
+            this.bunifuLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
+            this.bunifuLabel11.Location = new System.Drawing.Point(67, 110);
+            this.bunifuLabel11.Name = "bunifuLabel11";
+            this.bunifuLabel11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel11.Size = new System.Drawing.Size(66, 19);
+            this.bunifuLabel11.TabIndex = 3;
+            this.bunifuLabel11.Text = "this Year";
+            this.bunifuLabel11.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel11.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Total_earning_counter_month);
+            this.panel2.Controls.Add(this.bunifuLabel9);
+            this.panel2.Controls.Add(this.bunifuLabel14);
+            this.panel2.Location = new System.Drawing.Point(275, 124);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(198, 137);
+            this.panel2.TabIndex = 19;
+            // 
+            // Total_earning_counter_month
+            // 
+            this.Total_earning_counter_month.AutoEllipsis = false;
+            this.Total_earning_counter_month.CursorType = null;
+            this.Total_earning_counter_month.Font = new System.Drawing.Font("Fira Code", 21.75F, System.Drawing.FontStyle.Bold);
+            this.Total_earning_counter_month.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(73)))), ((int)(((byte)(134)))));
+            this.Total_earning_counter_month.Location = new System.Drawing.Point(38, 49);
+            this.Total_earning_counter_month.Name = "Total_earning_counter_month";
+            this.Total_earning_counter_month.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Total_earning_counter_month.Size = new System.Drawing.Size(122, 47);
+            this.Total_earning_counter_month.TabIndex = 13;
+            this.Total_earning_counter_month.Text = "1000000";
+            this.Total_earning_counter_month.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Total_earning_counter_month.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel9
+            // 
+            this.bunifuLabel9.AutoEllipsis = false;
+            this.bunifuLabel9.CursorType = null;
+            this.bunifuLabel9.Font = new System.Drawing.Font("Cascadia Code SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
+            this.bunifuLabel9.Location = new System.Drawing.Point(27, 9);
+            this.bunifuLabel9.Name = "bunifuLabel9";
+            this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel9.Size = new System.Drawing.Size(146, 27);
+            this.bunifuLabel9.TabIndex = 12;
+            this.bunifuLabel9.Text = "Total Earning";
+            this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel14
+            // 
+            this.bunifuLabel14.AutoEllipsis = false;
+            this.bunifuLabel14.CursorType = null;
+            this.bunifuLabel14.Font = new System.Drawing.Font("Fira Code", 8.249999F);
+            this.bunifuLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
+            this.bunifuLabel14.Location = new System.Drawing.Point(59, 110);
+            this.bunifuLabel14.Name = "bunifuLabel14";
+            this.bunifuLabel14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel14.Size = new System.Drawing.Size(73, 19);
+            this.bunifuLabel14.TabIndex = 4;
+            this.bunifuLabel14.Text = "this Month";
+            this.bunifuLabel14.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel14.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bunifuLabel5);
+            this.panel1.Controls.Add(this.Total_earning_counter_day);
+            this.panel1.Controls.Add(this.bunifuLabel7);
+            this.panel1.Location = new System.Drawing.Point(54, 124);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(198, 137);
+            this.panel1.TabIndex = 18;
+            // 
+            // bunifuLabel5
+            // 
+            this.bunifuLabel5.AutoEllipsis = false;
+            this.bunifuLabel5.CursorType = null;
+            this.bunifuLabel5.Font = new System.Drawing.Font("Fira Code", 8.249999F);
+            this.bunifuLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
+            this.bunifuLabel5.Location = new System.Drawing.Point(77, 110);
+            this.bunifuLabel5.Name = "bunifuLabel5";
+            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel5.Size = new System.Drawing.Size(38, 19);
+            this.bunifuLabel5.TabIndex = 14;
+            this.bunifuLabel5.Text = "Today";
+            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // Total_earning_counter_day
+            // 
+            this.Total_earning_counter_day.AutoEllipsis = false;
+            this.Total_earning_counter_day.CursorType = null;
+            this.Total_earning_counter_day.Font = new System.Drawing.Font("Fira Code", 21.75F, System.Drawing.FontStyle.Bold);
+            this.Total_earning_counter_day.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(73)))), ((int)(((byte)(134)))));
+            this.Total_earning_counter_day.Location = new System.Drawing.Point(42, 49);
+            this.Total_earning_counter_day.Name = "Total_earning_counter_day";
+            this.Total_earning_counter_day.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Total_earning_counter_day.Size = new System.Drawing.Size(122, 47);
+            this.Total_earning_counter_day.TabIndex = 13;
+            this.Total_earning_counter_day.Text = "1000000";
+            this.Total_earning_counter_day.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.Total_earning_counter_day.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel7
+            // 
+            this.bunifuLabel7.AutoEllipsis = false;
+            this.bunifuLabel7.CursorType = null;
+            this.bunifuLabel7.Font = new System.Drawing.Font("Cascadia Code SemiBold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(131)))), ((int)(((byte)(138)))));
+            this.bunifuLabel7.Location = new System.Drawing.Point(27, 9);
+            this.bunifuLabel7.Name = "bunifuLabel7";
+            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel7.Size = new System.Drawing.Size(146, 27);
+            this.bunifuLabel7.TabIndex = 12;
+            this.bunifuLabel7.Text = "Total Earning";
+            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // adminnamelbl
+            // 
+            this.adminnamelbl.AutoEllipsis = false;
+            this.adminnamelbl.CursorType = null;
+            this.adminnamelbl.Font = new System.Drawing.Font("Fira Code", 14.25F, System.Drawing.FontStyle.Bold);
+            this.adminnamelbl.Location = new System.Drawing.Point(209, 70);
+            this.adminnamelbl.Name = "adminnamelbl";
+            this.adminnamelbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.adminnamelbl.Size = new System.Drawing.Size(113, 33);
+            this.adminnamelbl.TabIndex = 17;
+            this.adminnamelbl.Text = "ElQESSOUAR ";
+            this.adminnamelbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.adminnamelbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel4
             // 
@@ -454,9 +643,9 @@
             this.bunifuLabel4.Location = new System.Drawing.Point(48, 304);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(219, 23);
+            this.bunifuLabel4.Size = new System.Drawing.Size(93, 23);
             this.bunifuLabel4.TabIndex = 4;
-            this.bunifuLabel4.Text = "earning of the last year";
+            this.bunifuLabel4.Text = "Earning of ";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -474,37 +663,6 @@
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.ActiveImage = null;
-            this.bunifuImageButton1.AllowAnimations = true;
-            this.bunifuImageButton1.AllowBuffering = false;
-            this.bunifuImageButton1.AllowZooming = true;
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
-            this.bunifuImageButton1.FadeWhenInactive = false;
-            this.bunifuImageButton1.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.ImageLocation = null;
-            this.bunifuImageButton1.ImageMargin = 40;
-            this.bunifuImageButton1.ImageSize = new System.Drawing.Size(593, 296);
-            this.bunifuImageButton1.ImageZoomSize = new System.Drawing.Size(633, 336);
-            this.bunifuImageButton1.InitialImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.InitialImage")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(48, 337);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Rotation = 0;
-            this.bunifuImageButton1.ShowActiveImage = true;
-            this.bunifuImageButton1.ShowCursorChanges = true;
-            this.bunifuImageButton1.ShowImageBorders = true;
-            this.bunifuImageButton1.ShowSizeMarkers = false;
-            this.bunifuImageButton1.Size = new System.Drawing.Size(633, 336);
-            this.bunifuImageButton1.TabIndex = 1;
-            this.bunifuImageButton1.ToolTipText = "";
-            this.bunifuImageButton1.WaitOnLoad = false;
-            this.bunifuImageButton1.Zoom = 40;
-            this.bunifuImageButton1.ZoomSpeed = 10;
-            // 
             // bunifuLabel1
             // 
             this.bunifuLabel1.AutoEllipsis = false;
@@ -513,9 +671,9 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(48, 70);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(563, 54);
+            this.bunifuLabel1.Size = new System.Drawing.Size(157, 33);
             this.bunifuLabel1.TabIndex = 0;
-            this.bunifuLabel1.Text = " Welcome back , Mr.ElQESSOUAR ";
+            this.bunifuLabel1.Text = " Welcome back ,";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -536,20 +694,24 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
-            this.ClientSize = new System.Drawing.Size(1344, 685);
+            this.ClientSize = new System.Drawing.Size(1705, 785);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.Settingspanel);
-            this.Controls.Add(this.panel3);
             this.Name = "Settings_form";
             this.Text = "Settings";
+            this.Load += new System.EventHandler(this.Settings_form_Load);
             this.Settingspanel.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.earninglinechart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EarningPerMonthPie)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EarningPerMonth)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -557,7 +719,6 @@
         #endregion
 
         private System.Windows.Forms.Panel Settingspanel;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private Bunifu.Framework.UI.BunifuFlatButton Creditbtn;
         private Bunifu.Framework.UI.BunifuFlatButton Categoriebtn;
@@ -566,18 +727,28 @@
         private Bunifu.Framework.UI.BunifuFlatButton depensebtn;
         private Bunifu.Framework.UI.BunifuFlatButton articlebtn;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private NewFolder1.Nombrevenduejour nombrevenduejour1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private Settings.Profile profile1;
-        private Bunifu.Framework.UI.BunifuFlatButton Morestatisticsbtn;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Settings.Totalvendumois totalvendumois1;
-        private Settings.Totolearningmois totolearningmois1;
+        private System.Windows.Forms.Panel Profile_Panel;
+        private Bunifu.UI.WinForms.BunifuLabel adminnamelbl;
+        private System.Windows.Forms.Panel panel1;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel11;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel14;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
+        private System.Windows.Forms.Panel panel5;
+        private Bunifu.UI.WinForms.BunifuLabel Total_earning_counter_year;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel13;
+        private System.Windows.Forms.Panel panel2;
+        private Bunifu.UI.WinForms.BunifuLabel Total_earning_counter_month;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
+        private Bunifu.UI.WinForms.BunifuLabel Total_earning_counter_day;
+        private System.Windows.Forms.DataVisualization.Charting.Chart EarningPerMonth;
+        private System.Windows.Forms.DateTimePicker statisticsdatepicker;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
+        private System.Windows.Forms.DataVisualization.Charting.Chart EarningPerMonthPie;
+        private System.Windows.Forms.DataVisualization.Charting.Chart earninglinechart;
     }
 }

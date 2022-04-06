@@ -111,6 +111,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -122,6 +123,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add_into_db_users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_into_db_users.Designer.cs">
+      <DependentUpon>add_into_db_users.cs</DependentUpon>
+    </Compile>
     <Compile Include="Article.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +157,14 @@
     </Compile>
     <Compile Include="Credit.Designer.cs">
       <DependentUpon>Credit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBTD_CoffeeManagement.cs">
+      <DependentUpon>DBTD_CoffeeManagement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBTD_CoffeeManagement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTD_CoffeeManagement.xsd</DependentUpon>
     </Compile>
     <Compile Include="DepenseForm.cs">
       <SubType>Form</SubType>
@@ -232,6 +247,9 @@
     <Compile Include="wifiFrom.Designer.cs">
       <DependentUpon>wifiFrom.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="add_into_db_users.resx">
+      <DependentUpon>add_into_db_users.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Article.resx">
       <DependentUpon>Article.cs</DependentUpon>
     </EmbeddedResource>
@@ -303,6 +321,17 @@
     </None>
     <None Include="CoffeeManagement_dbDataSet.xss">
       <DependentUpon>CoffeeManagement_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBTD_CoffeeManagement.xsc">
+      <DependentUpon>DBTD_CoffeeManagement.xsd</DependentUpon>
+    </None>
+    <None Include="DBTD_CoffeeManagement.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTD_CoffeeManagement.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTD_CoffeeManagement.xss">
+      <DependentUpon>DBTD_CoffeeManagement.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
