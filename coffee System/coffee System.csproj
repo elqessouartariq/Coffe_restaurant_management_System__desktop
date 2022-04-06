@@ -35,34 +35,76 @@
   <ItemGroup>
     <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
     <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
-      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
-      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
-      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
-      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
-      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
-      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
-      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
-      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
-      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.ToggleSwitch">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.ToggleSwitch.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -86,6 +128,23 @@
     <Compile Include="Article.Designer.cs">
       <DependentUpon>Article.cs</DependentUpon>
     </Compile>
+    <Compile Include="billProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="billProduct.Designer.cs">
+      <DependentUpon>billProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnCategorit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="btnCategorit.Designer.cs">
+      <DependentUpon>btnCategorit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoffeeManagement_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoffeeManagement_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Credit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +162,19 @@
     </Compile>
     <Compile Include="Items\prd.Designer.cs">
       <DependentUpon>prd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations.cs" />
+    <Compile Include="Panier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panier.Designer.cs">
+      <DependentUpon>Panier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintForm.Designer.cs">
+      <DependentUpon>PrintForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Recipe.cs">
       <SubType>Form</SubType>
@@ -154,8 +226,20 @@
     <Compile Include="tableaubord.Designer.cs">
       <DependentUpon>tableaubord.cs</DependentUpon>
     </Compile>
+    <Compile Include="wifiFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wifiFrom.Designer.cs">
+      <DependentUpon>wifiFrom.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Article.resx">
       <DependentUpon>Article.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billProduct.resx">
+      <DependentUpon>billProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnCategorit.resx">
+      <DependentUpon>btnCategorit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Credit.resx">
       <DependentUpon>Credit.cs</DependentUpon>
@@ -165,6 +249,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\prd.resx">
       <DependentUpon>prd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panier.resx">
+      <DependentUpon>Panier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForm.resx">
+      <DependentUpon>PrintForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Recipe.resx">
       <DependentUpon>Recipe.cs</DependentUpon>
@@ -200,6 +290,20 @@
     <EmbeddedResource Include="tableaubord.resx">
       <DependentUpon>tableaubord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="wifiFrom.resx">
+      <DependentUpon>wifiFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CoffeeManagement_dbDataSet.xsc">
+      <DependentUpon>CoffeeManagement_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CoffeeManagement_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CoffeeManagement_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CoffeeManagement_dbDataSet.xss">
+      <DependentUpon>CoffeeManagement_dbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -295,11 +399,17 @@
     <None Include="Resources\icons8-recipe-book-64.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\coffe.png" />
+    <None Include="Resources\240-2405959_coffee-cup-vector-png-transparent-png.png" />
+    <None Include="Resources\def.png" />
     <Content Include="Resources\icons8-afficher-toutes-les-vues-50 %281%29.png" />
+    <None Include="Resources\icons8-afficher-toutes-les-vues-50 %281%291.png" />
     <Content Include="Resources\icons8-dessert-60.png" />
     <Content Include="Resources\icons8-effacer-30.png" />
     <Content Include="Resources\icons8-food-64 %281%29.png" />
+    <None Include="Resources\icons8-food-64 %281%291.png" />
     <Content Include="Resources\icons8-juice-64.png" />
+    <None Include="Resources\icons8-juice-641.png" />
     <Content Include="Resources\icons8-moins-50.png" />
     <Content Include="Resources\icons8-réduire-la-fenêtre-24.png" />
     <Content Include="Resources\icons8-tasse-50.png" />

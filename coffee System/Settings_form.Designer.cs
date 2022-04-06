@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings_form));
             this.Settingspanel = new System.Windows.Forms.Panel();
             this.profile1 = new coffee_System.Settings.Profile();
@@ -49,12 +49,12 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.nombrevenduejour1 = new coffee_System.NewFolder1.Nombrevenduejour();
             this.totalvendumois1 = new coffee_System.Settings.Totalvendumois();
-            this.totolearningmois1 = new coffee_System.Settings.Totolearningmois();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.totolearningmois1 = new coffee_System.Settings.Totolearningmois();
             this.Settingspanel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -332,19 +332,19 @@
             // 
             // bunifuCustomDataGrid1
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
@@ -365,7 +365,7 @@
             this.bunifuLabel3.Location = new System.Drawing.Point(64, 66);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(267, 27);
+            this.bunifuLabel3.Size = new System.Drawing.Size(459, 46);
             this.bunifuLabel3.TabIndex = 6;
             this.bunifuLabel3.Text = "Dernieres Produis Vendus";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -446,13 +446,6 @@
             this.totalvendumois1.Size = new System.Drawing.Size(198, 146);
             this.totalvendumois1.TabIndex = 1;
             // 
-            // totolearningmois1
-            // 
-            this.totolearningmois1.Location = new System.Drawing.Point(411, 3);
-            this.totolearningmois1.Name = "totolearningmois1";
-            this.totolearningmois1.Size = new System.Drawing.Size(198, 146);
-            this.totolearningmois1.TabIndex = 2;
-            // 
             // bunifuLabel4
             // 
             this.bunifuLabel4.AutoEllipsis = false;
@@ -520,7 +513,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(48, 70);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(311, 33);
+            this.bunifuLabel1.Size = new System.Drawing.Size(563, 54);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = " Welcome back , Mr.ElQESSOUAR ";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -530,6 +523,13 @@
             // 
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
+            // 
+            // totolearningmois1
+            // 
+            this.totolearningmois1.Location = new System.Drawing.Point(411, 3);
+            this.totolearningmois1.Name = "totolearningmois1";
+            this.totolearningmois1.Size = new System.Drawing.Size(198, 146);
+            this.totolearningmois1.TabIndex = 2;
             // 
             // Settings_form
             // 
