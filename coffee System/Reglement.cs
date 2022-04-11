@@ -18,15 +18,15 @@ namespace coffee_System
         }
         public static bool filter = false;
         public static long ID;
-        public static int id_admin = 3;
-        public static int id_cashier = 1;
+        public static long id_perssone_reglement = Program.login2.iduser;
+   
         public static int id_server;
         public static string montant;
         private void cancelreglementbtn_Click(object sender, EventArgs e)
         {
-            if (montant != "" && id_admin != 0 && id_server != 0 && ID != 0 && id_cashier !=0)
+            if (montant != "" && id_perssone_reglement != 0 && id_server != 0 && ID != 0 )
             {
-                Operation_tariq.insertcredit(montant, id_cashier, id_server, ID);
+                Operation_tariq.insertcredit(montant, id_perssone_reglement, id_server, ID);
                 this.reglement_MoreTableAdapter.Fill(this.dBTD_CoffeeManagement.Reglement_More);
                 Program.cr.refreshCredit();
             }
@@ -35,6 +35,7 @@ namespace coffee_System
         {
             // TODO: This line of code loads data into the 'dBTD_CoffeeManagement.Reglement_More' table. You can move, or remove it, as needed.
             this.reglement_MoreTableAdapter.Fill(this.dBTD_CoffeeManagement.Reglement_More);
+            lblusername.Text = Operations.getNameUser(id_perssone_reglement);
             filter = false;
             Servercombobox.DataSource = Operation_tariq.GetAllservers();
             Servercombobox.DisplayMember = "Nom_USER_WORK";
@@ -105,8 +106,12 @@ namespace coffee_System
             ID = Convert.ToInt32(ReglementDatagrid.Rows[ReglementDatagrid.CurrentRow.Index].Cells[0].Value);
             montant = ReglementDatagrid.Rows[ReglementDatagrid.CurrentRow.Index].Cells[5].Value.ToString();
             id_server = Convert.ToInt32(ReglementDatagrid.Rows[ReglementDatagrid.CurrentRow.Index].Cells[1].Value);
-            id_admin = Convert.ToInt32(ReglementDatagrid.Rows[ReglementDatagrid.CurrentRow.Index].Cells[2].Value);
+            //id_admin = Convert.ToInt32(ReglementDatagrid.Rows[ReglementDatagrid.CurrentRow.Index].Cells[2].Value);
 
+        }
+        private void close_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

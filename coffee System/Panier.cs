@@ -12,7 +12,7 @@ namespace coffee_System
 {
     public partial class Panier : UserControl
     {
-        long idCashier=1;
+        long idCashier= Program.idUser;
         long idProduit;
         double prix;
         string desc;

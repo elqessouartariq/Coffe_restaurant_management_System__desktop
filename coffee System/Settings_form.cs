@@ -18,13 +18,13 @@ namespace coffee_System
             InitializeComponent();
         }
 
-        public static String stats="admin";//to check if it was an admin /cashier...or not --notice need to do it in login forme
-        public static long ID = 3;//id admin in need 
+        public static String stats= Program.statut;//to check if it was an admin /cashier...or not --notice need to do it in login forme
+        public static long ID = Program.idUser;//id admin in need 
 
         private void Creditbtn_Click(object sender, EventArgs e)
         {
             //instansiate Credit obj
-           
+            Program.cr = new Credit();
             Program.cr.Visible = true;
         }
 
@@ -37,26 +37,25 @@ namespace coffee_System
 
         private void recipebtn_Click(object sender, EventArgs e)
         {
-            Recipe rp =new Recipe();
-            rp.Visible = true;
+           Program.rcp= new Recipe(true);
+            Program.rcp.Visible = true;
         }
 
         private void articlebtn_Click(object sender, EventArgs e)
         {
-            Article ar =new Article();
-            ar.Visible = true;
+           Program.art=new Article();
+            Program.art.Visible = true;
         }
 
         private void Settings_form_Load(object sender, EventArgs e)
         {
-            if (stats == "admin")
-            {
-                Add_Profile_into_Panel(ID);
+            
+                Add_Profile_into_Panel(Program.idUser);
                 count_earning_day();
                 count_earning_month();
                 count_earning_year();
                 showstatistics(int.Parse(statisticsdatepicker.Text));
-            }
+            
             
         }
         public void showstatistics(int date)
@@ -136,5 +135,21 @@ namespace coffee_System
             showstatistics(int.Parse(statisticsdatepicker.Text));
         }
 
+        private void Total_earning_counter_day_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void serverbtn_Click(object sender, EventArgs e)
+        {
+            Program.user = new Form2();
+            Program.user.Visible=true;
+        }
+
+        private void Categoriebtn_Click(object sender, EventArgs e)
+        {
+            Categorie cr=new Categorie();
+            cr.Visible=true;
+        }
     }
 }

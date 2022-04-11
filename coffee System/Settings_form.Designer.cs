@@ -73,7 +73,6 @@
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.totolearningmois1 = new coffee_System.Settings.Totolearningmois();
             this.Settingspanel.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.earninglinechart)).BeginInit();
@@ -142,6 +141,7 @@
             this.serverbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.serverbtn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(81)))), ((int)(((byte)(189)))));
             this.serverbtn.TextFont = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
+            this.serverbtn.Click += new System.EventHandler(this.serverbtn_Click);
             // 
             // depensebtn
             // 
@@ -252,6 +252,7 @@
             this.Categoriebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Categoriebtn.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(81)))), ((int)(((byte)(189)))));
             this.Categoriebtn.TextFont = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
+            this.Categoriebtn.Click += new System.EventHandler(this.Categoriebtn_Click);
             // 
             // recipebtn
             // 
@@ -605,6 +606,7 @@
             this.Total_earning_counter_day.Text = "1000000";
             this.Total_earning_counter_day.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.Total_earning_counter_day.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.Total_earning_counter_day.Click += new System.EventHandler(this.Total_earning_counter_day_Click);
             // 
             // bunifuLabel7
             // 
@@ -681,13 +683,6 @@
             // 
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
-            // 
-            // totolearningmois1
-            // 
-            this.totolearningmois1.Location = new System.Drawing.Point(411, 3);
-            this.totolearningmois1.Name = "totolearningmois1";
-            this.totolearningmois1.Size = new System.Drawing.Size(198, 146);
-            this.totolearningmois1.TabIndex = 2;
             // 
             // Settings_form
             // 

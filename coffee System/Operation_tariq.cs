@@ -20,9 +20,10 @@ namespace coffee_System
             try
             {
                 conx.Open();
-            }catch (Exception ex) 
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message+"\nMake sure your Connection String is Correct !!");
+                MessageBox.Show(ex.Message + "\nMake sure your Connection String is Correct !!");
             }
             finally
             {
@@ -43,40 +44,40 @@ namespace coffee_System
             testconnection();
 
             int affected_rows = 0;
-            
+
             conx.Open();
-            
-                string profile = "insertUser";
-                SqlCommand cmd = new SqlCommand(profile, conx);
-                cmd.CommandType = CommandType.StoredProcedure;
-               //// @uname varchar(150),@pname varchar(150),@user varchar(150),@cin varchar(15),@email varchar(150),@phone varchar(13),@status varchar(50),@pass varchar(150),@image image
+
+            string profile = "insertUser";
+            SqlCommand cmd = new SqlCommand(profile, conx);
+            cmd.CommandType = CommandType.StoredProcedure;
+            //// @uname varchar(150),@pname varchar(150),@user varchar(150),@cin varchar(15),@email varchar(150),@phone varchar(13),@status varchar(50),@pass varchar(150),@image image
 
 
-                cmd.Parameters.AddWithValue("@uname", Nomuser);
-                cmd.Parameters.AddWithValue("@pname", Prenom);
-                cmd.Parameters.AddWithValue("@user", user);
-                cmd.Parameters.AddWithValue("@cin", Cin);
-                cmd.Parameters.AddWithValue("@email", Email);
-                cmd.Parameters.AddWithValue("@phone", Phone);
-                cmd.Parameters.AddWithValue("@status", Status);
-                cmd.Parameters.AddWithValue("@pass", Pass);
-                cmd.Parameters.AddWithValue("@image", images);
+            cmd.Parameters.AddWithValue("@uname", Nomuser);
+            cmd.Parameters.AddWithValue("@pname", Prenom);
+            cmd.Parameters.AddWithValue("@user", user);
+            cmd.Parameters.AddWithValue("@cin", Cin);
+            cmd.Parameters.AddWithValue("@email", Email);
+            cmd.Parameters.AddWithValue("@phone", Phone);
+            cmd.Parameters.AddWithValue("@status", Status);
+            cmd.Parameters.AddWithValue("@pass", Pass);
+            cmd.Parameters.AddWithValue("@image", images);
 
-            
+
             affected_rows = cmd.ExecuteNonQuery();
-                if (affected_rows == 0)
-                    MessageBox.Show("User not insert !", "Warning ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                else
-                    MessageBox.Show("User insert Successfully !", "Insertion ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (affected_rows == 0)
+                MessageBox.Show("User not insert !", "Warning ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            else
+                MessageBox.Show("User insert Successfully !", "Insertion ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-               
+
             conx.Close();
         }
         public static DataTable GetProfile(long id)
         {
             testconnection();
             DataTable dt = new DataTable();
-            string profile = "select * from USER_WORK where "+id+"=ID_USER_WORK";
+            string profile = "select * from USER_WORK where " + id + "=ID_USER_WORK";
             SqlCommand cmd = new SqlCommand(profile, conx);
             SqlDataAdapter sd = new SqlDataAdapter(cmd);
             sd.Fill(dt);
@@ -98,14 +99,14 @@ namespace coffee_System
             SqlDataReader rdr = cmd.ExecuteReader();
 
             rdr.Read();
-            
-            if(rdr[0] == DBNull.Value)
+
+            if (rdr[0] == DBNull.Value)
             {
                 total_day = "0.00";
             }
             else
             {
-               total_day = String.Format("{0:0.00}", rdr[0]);
+                total_day = String.Format("{0:0.00}", rdr[0]);
             }
 
             rdr.Close();
@@ -137,7 +138,7 @@ namespace coffee_System
             {
                 total_month = String.Format("{0:0.00}", rdr[0]);
             }
-                
+
             rdr.Close();
             conx.Close();
 
@@ -166,7 +167,7 @@ namespace coffee_System
             }
             else
             {
-            total_year = String.Format("{0:0.00}", rdr[0]);
+                total_year = String.Format("{0:0.00}", rdr[0]);
             }
 
             rdr.Close();
@@ -174,7 +175,7 @@ namespace coffee_System
 
             return total_year;
         }
-        public static void insertdepense(String libelle,String descreption ,String depensedate ,String pricedepense,long id) 
+        public static void insertdepense(String libelle, String descreption, String depensedate, String pricedepense, long id)
         {
             testconnection();
 
@@ -185,7 +186,7 @@ namespace coffee_System
             string proc = "insertDepense";
             SqlCommand cmd = new SqlCommand(proc, conx);
             cmd.CommandType = CommandType.StoredProcedure;
-            
+
 
 
             cmd.Parameters.AddWithValue("@dep_Date", depensedate);
@@ -193,7 +194,7 @@ namespace coffee_System
             cmd.Parameters.AddWithValue("@Libelle", libelle);
             cmd.Parameters.AddWithValue("@dep_description", descreption);
             cmd.Parameters.AddWithValue("@id_USER_WORK_ADMIN", id);
-       
+
 
 
             affected_rows = cmd.ExecuteNonQuery();
@@ -205,7 +206,7 @@ namespace coffee_System
 
             conx.Close();
         }
-        public static void updatedepense(int ID_Depense,String libelle, String descreption, String depensedate, String pricedepense, long id)
+        public static void updatedepense(int ID_Depense, String libelle, String descreption, String depensedate, String pricedepense, long id)
         {
             testconnection();
 
@@ -248,8 +249,8 @@ namespace coffee_System
             SqlCommand cmd = new SqlCommand(proc, conx);
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.AddWithValue("@id_dep",id);
-      
+            cmd.Parameters.AddWithValue("@id_dep", id);
+
             affected_rows = cmd.ExecuteNonQuery();
             if (affected_rows == 0)
                 MessageBox.Show("Depense Deleted Failed!", "Warning ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -274,7 +275,7 @@ namespace coffee_System
             testconnection();
             conx.Open();
             DataTable dt = new DataTable();
-            String querry= "select *  from Depense where  Libelle like '%"+search+"%' or dep_Date like '%" + search + "%' or dep_description like '%" + search + "%' or Montant like '%" + search + "%'";
+            String querry = "select *  from Depense where  Libelle like '%" + search + "%' or dep_Date like '%" + search + "%' or dep_description like '%" + search + "%' or Montant like '%" + search + "%'";
             SqlDataAdapter adapt = new SqlDataAdapter(querry, conx);
             adapt.Fill(dt);
             conx.Close();
@@ -293,10 +294,10 @@ namespace coffee_System
 
 
             cmd.Parameters.AddWithValue("@id_credit", id);
-        
+
 
             affected_rows = cmd.ExecuteNonQuery();
-       
+
             if (affected_rows == 0)
                 MessageBox.Show("Credit FIXED FAILED  !", "Warning ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
@@ -330,7 +331,7 @@ namespace coffee_System
             }
             conx.Close();
         }
-        public static void insertreglement(String montant ,int id_admin, int id_server,long ID)
+        public static void insertreglement(String montant, long id_admin, long id_server, long ID)
         {
             testconnection();
 
@@ -341,17 +342,17 @@ namespace coffee_System
             string proc = "insertReglement";
             SqlCommand cmd = new SqlCommand(proc, conx);
             cmd.CommandType = CommandType.StoredProcedure;
-            
+
 
             cmd.Parameters.AddWithValue("@idUserServer", id_server);
             cmd.Parameters.AddWithValue("@idUserAdmin", id_admin);
             cmd.Parameters.AddWithValue("@total", montant);
-       
+
             affected_rows = cmd.ExecuteNonQuery();
             conx.Close();
             deletecredit(ID);
         }
-        public static void insertcredit(String montant, int id_cashier, int id_server, long ID)
+        public static void insertcredit(String montant, long id_perssone_regle, int id_server, long ID)
         {
             testconnection();
 
@@ -363,9 +364,9 @@ namespace coffee_System
             SqlCommand cmd = new SqlCommand(proc, conx);
             cmd.CommandType = CommandType.StoredProcedure;
 
-            
+
             cmd.Parameters.AddWithValue("@idUserServer", id_server);
-            cmd.Parameters.AddWithValue("@idUserCashier", id_cashier);
+            cmd.Parameters.AddWithValue("@idUserCashier", id_perssone_regle);
             cmd.Parameters.AddWithValue("@total", montant);
 
             affected_rows = cmd.ExecuteNonQuery();
@@ -375,9 +376,9 @@ namespace coffee_System
         public static DataTable statistique(int date = 2022)
         {
             testconnection();
-            conx.Open();    
-            string query = "select MONTH(Date_com) as 'month',sum(Total_com) as 'total' from COMMANDE where year(Date_com) = '"+date+"' group by MONTH(Date_com)";
-            
+            conx.Open();
+            string query = "select MONTH(Date_com) as 'month',sum(Total_com) as 'total' from COMMANDE where year(Date_com) = '" + date + "' group by MONTH(Date_com)";
+
             DataTable dt = new DataTable();
             SqlDataAdapter adapt = new SqlDataAdapter(query, conx);
             adapt.Fill(dt);
@@ -388,7 +389,7 @@ namespace coffee_System
         {
             testconnection();
             conx.Open();
-            string query = "select sum(Total_com) * 1.0 / (select sum(Total_com) from COMMANDE C inner join USER_WORK U on C.ID_com = U.ID_USER_WORK where YEAR(C.Date_com) ='" + date + "' ) as 'Total' ,U.Nom_USER_WORK as 'ServerName' from COMMANDE C inner join USER_WORK U on C.ID_com = U.ID_USER_WORK where YEAR(C.Date_com) ='" + date + "' Group by U.Nom_USER_WORK";
+            string query = "select sum(Total_com) * 1.0 / (select sum(Total_com) from COMMANDE C inner join USER_WORK U on C.ID_com = U.ID_USER_WORK where YEAR(C.Date_com) ='" + date + "' ) as 'Total' ,U.Nom_USER_WORK as 'ServerName' from COMMANDE C inner join USER_WORK U on C.ID_com = U.ID_USER_WORK where YEAR(C.Date_com) ='" + date + "'  and U.Statut='server' Group by U.Nom_USER_WORK";
 
             DataTable dt = new DataTable();
             SqlDataAdapter adapt = new SqlDataAdapter(query, conx);
@@ -412,12 +413,12 @@ namespace coffee_System
         {
             testconnection();
             conx.Open();
-            string query = "SELECT Nom_USER_WORK FROM USER_WORK ";
+            string query = "SELECT Nom_USER_WORK FROM USER_WORK where Statut='server'";
             SqlDataAdapter da = new SqlDataAdapter(query, conx);
             DataTable dt = new DataTable();
             da.Fill(dt);
             conx.Close();
-         return dt;  
+            return dt;
         }
     }
 }

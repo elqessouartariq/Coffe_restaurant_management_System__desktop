@@ -14,7 +14,7 @@ namespace coffee_System
 {
     internal class Operations
     {
-        static string stringConx = "Data Source=DESKTOP-VL8EQD6\\SQLEXPRESS;Initial Catalog=CoffeeManagement_db;Integrated Security=True";
+        static string stringConx = @"Data Source=DESKTOP-63TK96G\SQLEXPRESS;Initial Catalog=CoffeeManagement_db;Integrated Security=True";
         static  SqlConnection con = new SqlConnection(stringConx);
         public static int openConxDb()
         {
@@ -247,7 +247,7 @@ namespace coffee_System
             if (openConxDb()==1)
             {
 
-                string desing = "select ID_USER_WORK from USER_WORK where username_USER_WORK='"+username+"'";
+                string desing = "select ID_USER_WORK from USER_WORK where username_USER_WORK='"+username+ "' ";
                 SqlCommand cmd = new SqlCommand(desing, con);
                 SqlDataReader dr=cmd.ExecuteReader();
                 dr.Read();
@@ -291,28 +291,7 @@ namespace coffee_System
             closeConxDb();
         }
         //select sum(Total_com) from COMMANDE where id_USER_WORK_SERVER=2 and Date_com BETWEEN '2022-01-01' AND '2022-03-03'
-        public static double getTotalRecipe(string dateDeb,string dateFin,long idserver)
-        {
-            
-            double m=0;
-            
-            if (openConxDb()==1)
-            {
-
-                string desing = "select sum(Total_com) from COMMANDE where id_USER_WORK_SERVER='"+idserver+"' and Date_com BETWEEN '"+dateDeb+"' AND '"+dateDeb+"'";
-                SqlCommand cmd = new SqlCommand(desing, con);
-                SqlDataReader dr=cmd.ExecuteReader();
-                dr.Read();
-                m = (long)(dr[0]) ;
-                  
-            }
-            else
-            {
-                MessageBox.Show("Error in Connexion with database 316!","Error Connexion",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-            }
-            closeConxDb();
-            return m;
-        }
+        
    
         public static DataTable getAllArticl()
         {
@@ -589,7 +568,7 @@ namespace coffee_System
 
 
         }
-        public static double getTotalRecipe(long idcashier,long idserver,DateTime startdate,DateTime enddate)
+        public static double getTotalRecipe(long idcashier,string idserver,DateTime startdate,DateTime enddate)
         {
             double m = 0;
 
@@ -605,7 +584,7 @@ namespace coffee_System
             }
             else
             {
-                MessageBox.Show("Error in Connexion with database 609!", "Error Connexion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Error in Connexion with database 587!", "Error Connexion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             closeConxDb();
             return m;
@@ -728,5 +707,121 @@ namespace coffee_System
             closeConxDb();
             return m;
         }
+        public static int userIsCashier(long idUser)
+        {
+            string m;
+
+            if (openConxDb() == 1)
+            {
+
+                string desing = "select Statut from USER_WORK where ID_USER_WORK='"+idUser+"'";
+                SqlCommand cmd = new SqlCommand(desing, con);
+                SqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                m = (dr[0]).ToString();
+                closeConxDb();
+                if (m.ToLower() == "cashier")
+                {
+                    return 1;
+                }
+                else
+                    return 0;
+            }
+            else
+            {
+                MessageBox.Show("Error in Connexion with database 726!", "Error Connexion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            closeConxDb();
+            return 0;
+        }
+        public static string getStatusUser(long  iduser)
+        {
+            string m="";
+
+            if (openConxDb() == 1)
+            {
+
+                string desing = "if((select statut from USER_WORK where ID_USER_WORK='"+iduser+ "') is not null) (select statut from USER_WORK where ID_USER_WORK='" + iduser + "') else select 0";
+                SqlCommand cmd = new SqlCommand(desing, con);
+                SqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                m = (dr[0]).ToString();
+                if (m == "0")
+                    MessageBox.Show("User not found !", "Warning ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                MessageBox.Show("Error in Connexion with database 265!", "Error Connexion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            closeConxDb();
+            return m;
+        }
+        public static DataTable RecipeTableAdmin(DateTime dtStart, DateTime dtEnd, long idServer)
+        {
+
+            DataTable dt = new DataTable();
+            if (openConxDb() == 1)
+            {
+                string desing = "select Description_pro as 'Product',Qte,Total,Date_com as 'Date',Nom_USER_WORK+' '+Prenom_USER_WORK as'Server' from DETAIL, Product, COMMANDE, USER_WORK where DETAIL.ID_com = COMMANDE.ID_com and DETAIL.ID_Product = Product.ID_pro and COMMANDE.id_USER_WORK_SERVER = USER_WORK.ID_USER_WORK and  COMMANDE.id_USER_WORK_SERVER='" + idServer + "' and Date_com between '" + dtStart + "' and '" + dtEnd + "'";
+                SqlCommand cmd = new SqlCommand(desing, con);
+                SqlDataAdapter sd = new SqlDataAdapter(cmd);
+                sd.Fill(dt);
+            }
+            else
+            {
+                MessageBox.Show("Error in Connexion with database 794!", "Error Connexion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            closeConxDb();
+
+            return dt;
+
+
+        }
+        public static double getTotalRecipeAdmin( string idserver, DateTime startdate, DateTime enddate)
+        {
+            double m = 0;
+
+            if (openConxDb() == 1)
+            {
+
+                string desing = "if((select SUM(Total_com) from COMMANDE where id_USER_WORK_SERVER = '" + idserver + "' and Date_com between '" + startdate + "' and '" + enddate + "') is null) select 0 else select SUM(Total_com) from COMMANDE where  id_USER_WORK_SERVER = '" + idserver + "' and Date_com between '" + startdate + "' and '" + enddate + "'";
+                SqlCommand cmd = new SqlCommand(desing, con);
+                SqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                m = double.Parse((dr[0].ToString()));
+
+            }
+            else
+            {
+                MessageBox.Show("Error in Connexion with database 818!", "Error Connexion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            closeConxDb();
+            return m;
+        }
+        public static long getIDUser(string nom,string prenom)
+        {
+            long m = 0;
+
+            if (openConxDb() == 1)
+            {
+
+                string desing = "select ID_USER_WORK from USER_WORK  where Nom_USER_WORK='"+nom+"' and Prenom_USER_WORK='"+prenom+"'";
+                SqlCommand cmd = new SqlCommand(desing, con);
+                SqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                m = (long)(dr[0]);
+                if (m == 0)
+                    MessageBox.Show("User not found !", "Warning ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                MessageBox.Show("Error in Connexion with database 840!", "Error Connexion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            closeConxDb();
+            return m;
+        }
+
     }
 }

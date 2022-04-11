@@ -14,7 +14,7 @@ namespace coffee_System.Items
     {
          double pr=0;
          long idP = 0;
-         long idCashier = 1;//from login page
+         long idCashier = Program.idUser;//from login page
         bool isArticle;
         long idCategorie;
        public  string desc;
@@ -42,7 +42,7 @@ namespace coffee_System.Items
                 picdelete.Visible = false;
                 picupdate.Visible = false;
             }
-            else
+            if(isArticle == true)
             {
                 picdelete.Visible = true;
                 picupdate.Visible = true;
@@ -74,7 +74,7 @@ namespace coffee_System.Items
         private void picupdate_Click(object sender, EventArgs e)
         {
             string prix = price.Text;
-            prix.Replace(" DH", string.Empty);
+            
             double p=double.Parse(prix.Replace(" DH", string.Empty));
             int qte = Operations.getQteProduct(this.idP);
             Program.art.remplirTextFields(idP,designationproduct.Text, picproduct.Image,qte ,p,idCategorie);

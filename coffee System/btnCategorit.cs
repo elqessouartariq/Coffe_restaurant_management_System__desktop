@@ -48,7 +48,7 @@ namespace coffee_System
                     pic.Image = Image.FromStream(ms);
 
                 }
-                Items.prd pro = new Items.prd(idP, descr, prix, pic.Image, true, idcategorie);
+                Items.prd pro = new Items.prd(idP, descr, prix, pic.Image, this.isArticle, idcategorie);
                 Program.art.layoutproduct.Controls.Add(pro);
             }
 
@@ -78,7 +78,7 @@ namespace coffee_System
                     pic.Image = Image.FromStream(ms);
 
                 }
-                Items.prd pro = new Items.prd(idP, descr, prix, pic.Image, true, idcategorie);
+                Items.prd pro = new Items.prd(idP, descr, prix, pic.Image, this.isArticle, idcategorie);
                 Program.tabbord.layoutproduct.Controls.Add(pro);
             }
 

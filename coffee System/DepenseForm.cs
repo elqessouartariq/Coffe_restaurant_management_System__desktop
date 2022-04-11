@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -19,13 +20,13 @@ namespace coffee_System
             
         }
         public static int ID_Depense;
-        public static String stats = "admin";//to check if it was an admin /cashier...or not --notice need to do it in login forme
-        public static long ID = 3;//id admin in need 
+        public static String stats ;//to check if it was an admin /cashier...or not --notice need to do it in login forme
+        public static long ID ;//id admin in need 
         public static bool filter = false;
+        public Bitmap bmp;
         private void add_Depensebtn_Click(object sender, EventArgs e)
         {
-            if(stats == "admin")
-            {
+
             //need to add id_user admin tracabilites
             String libelle= libelletxtbox.Text;
             String descreption=descriptiontxtbox.Text;
@@ -35,13 +36,12 @@ namespace coffee_System
             Operation_tariq.insertdepense(libelle, descreption, depensedate, pricedepense,ID);
                 //Fill_DataGridView();
                 refresh_depense_form();
-            }
+            
             
         }
         private void update_depensebtn_Click(object sender, EventArgs e)
         {
-            if (stats == "admin")
-            {
+            
                 String libelle = libelletxtbox.Text;
                 String descreption = descriptiontxtbox.Text;
                 String depensedate = depensedatepicker.Value.ToString("yyyy-MM-dd");
@@ -49,27 +49,20 @@ namespace coffee_System
                 Operation_tariq.updatedepense(ID_Depense,libelle, descreption, depensedate, pricedepense, ID);
                 //Fill_DataGridView();
                 refresh_depense_form();
-            }
+            
         }
         private void DepenseForm_Load(object sender, EventArgs e)
         {
+            stats = Program.statut;
+            ID = Program.idUser;
+            lblusername.Text = Operations.getNameUser(ID);
+            depensedatepicker.Value = DateTime.Today;
             // TODO: This line of code loads data into the 'dBTD_CoffeeManagement.Depense' table. You can move, or remove it, as needed.
             this.depenseTableAdapter.Fill(this.dBTD_CoffeeManagement.Depense);
             //Fill_DataGridView();
           
         }
-        private void libelletxtbox_Click(object sender, EventArgs e)
-        {
-            libelletxtbox.Text = String.Empty;
-        }
-        private void descriptiontxtbox_Click(object sender, EventArgs e)
-        {
-            descriptiontxtbox.Text = String.Empty;  
-        }
-        private void pricedepensetxt_Click(object sender, EventArgs e)
-        {
-            pricedepensetxt.Text = String.Empty;
-        }
+     
         private void Depensedatagrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             ID_Depense  = Convert.ToInt32(Depensedatagrid.Rows[Depensedatagrid.CurrentRow.Index].Cells[0].Value);
@@ -95,11 +88,9 @@ namespace coffee_System
         }
         private void delete_Depensebtn_Click(object sender, EventArgs e)
         {
-            if (stats == "admin")
-            {
                 Operation_tariq.deletedepense(ID_Depense);
                 refresh_depense_form();
-            }
+            
         }
         public  void refresh_depense_form()
         {
@@ -160,6 +151,87 @@ namespace coffee_System
                 filter=false;
                 MessageBox.Show("END Date should Be GREATER OR EQUAL TO START DATE !!!", "Warning ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void libelletxtbox_TextChange(object sender, EventArgs e)
+        {
+            if (libelletxtbox.Text == string.Empty)
+            {
+                errorProviderWarning.SetError(libelletxtbox, "Libelle is Empty !!");
+                errorProviderWrong.SetError(libelletxtbox, "");
+                errorProviderApproved.SetError(libelletxtbox, "");
+            }
+            else
+            {
+                errorProviderWarning.SetError(libelletxtbox, "");
+                errorProviderWrong.SetError(libelletxtbox, "");
+                errorProviderApproved.SetError(libelletxtbox, "Correct");
+            }
+        }
+
+        private void descriptiontxtbox_TextChange(object sender, EventArgs e)
+        {
+            if (descriptiontxtbox.Text == string.Empty)
+            {
+                errorProviderWarning.SetError(descriptiontxtbox, "Descreption is Empty !!");
+                errorProviderWrong.SetError(descriptiontxtbox, "");
+                errorProviderApproved.SetError(descriptiontxtbox, "");
+            }
+            else
+            {
+                errorProviderWarning.SetError(descriptiontxtbox, "");
+                errorProviderWrong.SetError(descriptiontxtbox, "");
+                errorProviderApproved.SetError(descriptiontxtbox, "Correct");
+            }
+        }
+
+        private void pricedepensetxt_TextChange(object sender, EventArgs e)
+        {
+            if (pricedepensetxt.Text == string.Empty)
+            {
+                errorProviderWarning.SetError(pricedepensetxt, "Price is Empty !!");
+                errorProviderWrong.SetError(pricedepensetxt, "");
+                errorProviderApproved.SetError(pricedepensetxt, "");
+            }
+            else
+            {
+                Regex numberchk = new Regex(@"^[0-9]*(?:\.[0-9]*)?$");
+                if (numberchk.IsMatch(pricedepensetxt.Text))
+                {
+                    errorProviderWarning.SetError(pricedepensetxt, "");
+                    errorProviderWrong.SetError(pricedepensetxt, "");
+                    errorProviderApproved.SetError(pricedepensetxt, "Correct");
+                }
+                else
+                {
+                    errorProviderWarning.SetError(pricedepensetxt, "");
+                    errorProviderWrong.SetError(pricedepensetxt, "Wrong format");
+                    errorProviderApproved.SetError(pricedepensetxt, "");
+                }
+            }
+        }
+        
+        private void PrintDepensebtn_Click(object sender, EventArgs e)
+        {
+             
+            int height = Depensedatagrid.Height;
+            Depensedatagrid.Height = Depensedatagrid.RowCount * Depensedatagrid.RowTemplate.Height * 2;
+            bmp = new Bitmap(Depensedatagrid.Width, Depensedatagrid.Height);
+            Depensedatagrid.DrawToBitmap(bmp, new Rectangle(0, 0, Depensedatagrid.Width, Depensedatagrid.Height));
+            Depensedatagrid.Height = height;
+            printPreviewDialog1.ShowDialog();
+        
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            //e.Graphics.DrawString("Listes des Depenses : \n" ,new Font("Arial", 12, FontStyle.Regular), Brushes.Black ,new Point(10, 10));
+            e.Graphics.DrawImage(bmp, 0, 0);
         }
     }
 }

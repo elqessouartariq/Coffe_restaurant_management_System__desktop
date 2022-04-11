@@ -15,11 +15,14 @@ namespace coffee_System
         int mov;
         int movX;
         int movY;
-        public long  idcashier=1;
-        public Recipe()
+        public long  idcashier;
+        public bool isadmin;
+        public Recipe(bool isadmin)
         {
+            this.isadmin = isadmin;
             InitializeComponent();
-            lblusername.Text = Operations.getNameUser(idcashier);
+            
+            
         }
         public void CalculCredit()
         {
@@ -29,7 +32,25 @@ namespace coffee_System
                 double rest = 0;
                 double advanced;
                 double paid;
-                total = Operations.getTotalRecipe(idcashier, long.Parse(cmbserver.SelectedValue.ToString()), startdate.Value, enddate.Value);
+                total = Operations.getTotalRecipe(  idcashier, cmbserver.SelectedValue.ToString(), startdate.Value, enddate.Value);
+                advanced = double.Parse(txtadvanceamount.Text);
+                paid = double.Parse(txtserverpayment.Text);
+                rest = total + advanced - paid;
+                txttotal.Text = total.ToString();
+                txtrest.Text = rest.ToString();
+            }
+
+        }
+        public void CalculCreditAdmin()
+        {
+            if (txtadvanceamount.Text != "" && txtserverpayment.Text != "")
+            {
+                double total;
+                double rest = 0;
+                double advanced;// long.Parse(cmbserver.SelectedValue.ToString())
+                double paid;
+                
+                total = Operations.getTotalRecipeAdmin(cmbserver.SelectedValue.ToString(), startdate.Value, enddate.Value);
                 advanced = double.Parse(txtadvanceamount.Text);
                 paid = double.Parse(txtserverpayment.Text);
                 rest = total + advanced - paid;
@@ -55,7 +76,13 @@ namespace coffee_System
                 startdate.Value = enddate.Value;
             }
             else
-                remplirGridRecipe();
+            {
+                if (isadmin == false)
+                    remplirGridRecipe();
+                else
+                    remplirGridRecipeAdmin();
+            }
+               
         }
         private void remplirGridRecipe()
         {
@@ -66,6 +93,27 @@ namespace coffee_System
                 gridrecipe.AutoGenerateColumns = false;
                 long idserver = long.Parse(cmbserver.SelectedValue.ToString());
                 DataTable dt = Operations.RecipeTable(startdate.Value, enddate.Value, idserver, idcashier);
+                int i = 0;
+                foreach (DataRow r in dt.Rows)
+                {
+                    gridrecipe.Rows.Add(r[0], r[1], r[2], r[3], r[4]);
+                }
+            }
+            else
+            {
+                gridrecipe.Rows.Clear();
+            }
+
+        }
+        private void remplirGridRecipeAdmin()
+        {
+            CalculCreditAdmin();
+            if (txttotal.Text != "0")
+            {
+                gridrecipe.Rows.Clear();
+                gridrecipe.AutoGenerateColumns = false;
+                long idserver = long.Parse(cmbserver.SelectedValue.ToString());
+                DataTable dt = Operations.RecipeTableAdmin(startdate.Value, enddate.Value, idserver);
                 int i = 0;
                 foreach (DataRow r in dt.Rows)
                 {
@@ -126,13 +174,20 @@ namespace coffee_System
 
         private void Recipe_Load(object sender, EventArgs e)
         {
+            idcashier = Program.idUser;
             //remplir combo server
             remplircmbServer();
           
+
             //initialiser les dates
             enddate.Value = DateTime.Now;
             startdate.Value = DateTime.Now.AddDays(-1);
-            //remplirGridRecipe();
+           /* if (isadmin == false)
+                remplirGridRecipe();
+            else
+                remplirGridRecipeAdmin();*/
+           cmbserver.SelectedIndex = 1;
+            lblusername.Text = Operations.getNameUser(idcashier);
 
 
         }
@@ -164,7 +219,10 @@ namespace coffee_System
             errnotNumeric.Clear();
             if (double.TryParse(txtadvanceamount.Text,out double a))
             {
-                CalculCredit();
+                if (isadmin == false)
+                    CalculCredit();
+                else
+                    CalculCreditAdmin();
                 btnvalidated.Enabled = true;
                 
             }
@@ -181,7 +239,10 @@ namespace coffee_System
             errnotNumeric2.Clear();
             if (double.TryParse(txtserverpayment.Text, out double a))
             {
+                if(isadmin==false)
                 CalculCredit();
+                else
+                    CalculCreditAdmin();    
                 btnvalidated.Enabled = true;
             }
             else
@@ -193,7 +254,7 @@ namespace coffee_System
 
         private void cmbserver_SelectedIndexChanged(object sender, EventArgs e)
         {
-         
+           
         }
 
         private void txtrest_TextChanged(object sender, EventArgs e)
@@ -211,7 +272,10 @@ namespace coffee_System
 
         private void cmbserver_TextChanged(object sender, EventArgs e)
         {
-           // remplirGridRecipe();
+           if(isadmin==false)
+            remplirGridRecipe();
+           else
+                remplirGridRecipeAdmin();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -221,8 +285,40 @@ namespace coffee_System
 
         private void cmbserver_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            remplirGridRecipe();
-        
+            if (isadmin == false)
+                remplirGridRecipe();
+            else
+                remplirGridRecipeAdmin();
+
+        }
+
+        private void setting_Click(object sender, EventArgs e)
+        {
+            if (Operations.userIsCashier(idcashier) == 1)
+            {
+                Program.tabbord = new tableaubord();
+                Program.tabbord.Visible = true;
+            }
+            else
+            {
+                Program.settings = new Settings_form();
+                Program.settings.Visible = true;
+            }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblusername_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,13 +21,11 @@ namespace coffee_System
         int mov;
         int movX;
         int movY;
-        long idCashier=1;//from login page
+        long idCashier= Program.idUser;//from login page
         public tableaubord()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Normal;
-            lblusername.Text = Operations.getNameUser(idCashier);
-
         }
         //---Functions
         
@@ -56,7 +54,7 @@ namespace coffee_System
         }
 
         //---------Remplir layout of product------------
-        private void remplirLayoutProduct()
+        public void remplirLayoutProduct()
 
         {
             layoutproduct.Controls.Clear();
@@ -110,6 +108,8 @@ namespace coffee_System
 
         {
             layoutcategorie.Controls.Clear();
+            btnAll btn1 = new btnAll(false);
+            layoutcategorie.Controls.Add(btn1);
             DataTable dt = Operations.getAllCategorie();
             PictureBox pic = new PictureBox();
             pic.Image = null;
@@ -197,13 +197,14 @@ namespace coffee_System
 
         private void tableaubord_Load(object sender, EventArgs e)
         {
-
+            lblusername.Text = Operations.getNameUser(idCashier);
+            this.WindowState=FormWindowState.Maximized;
             //fill panel facture
             remplirLayoutfacture();
             //fill layout of Product 
              remplirLayoutProduct();
             //fill layout of categorie
-            //remplirLayoutCategorie();
+            remplirLayoutCategorie();
             //fill combobox of server
             remplircmbServer();
         }
@@ -310,6 +311,30 @@ namespace coffee_System
         private void lbltotal_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void setting_Click(object sender, EventArgs e)
+        {
+            if (Operations.userIsCashier(idCashier) == 1)
+            {
+                Program.rcp = new Recipe(false);
+                Program.rcp.Visible = true;
+            }
+            else
+            {
+                Program.settings = new Settings_form();
+                Program.settings.Visible = true;
+            }
+        }
+
+        private void lblusername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnallitem_Click_1(object sender, EventArgs e)
+        {
+            remplirLayoutProduct();
         }
     }
 }

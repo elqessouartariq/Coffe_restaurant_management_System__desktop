@@ -17,12 +17,11 @@ namespace coffee_System
         int mov;
         int movX;
         int movY;
-        long idAdmin = 1;
+        long idAdmin = Program.idUser;
         long idProduitUpdate = 0;
         public Article()
         {
             InitializeComponent();
-            lblusername.Text = Operations.getNameUser(idAdmin);
         }
 
         //Clear TextField
@@ -119,8 +118,7 @@ namespace coffee_System
                       idP = (long)dt.Rows[i][0];
                       descr = dt.Rows[i][2].ToString();
                       prix = double.Parse(dt.Rows[i][3].ToString());
-                idcategorie= (long)dt.Rows[i][4];
-                //byte[] img = (byte[])(dt.Rows[i][1]);
+                      idcategorie= (long)(dt.Rows[i][4]);
                 if (dt.Rows[i][1] != null)
                   {
                       byte[] img = (byte[])(dt.Rows[i][1]);
@@ -145,6 +143,8 @@ namespace coffee_System
 
         {
             layoutcategorie.Controls.Clear();
+            btnAll btn1 = new btnAll(true);
+            layoutcategorie.Controls.Add(btn1);
             DataTable dt = Operations.getAllCategorie();
             PictureBox pic = new PictureBox();
             pic.Image = null;
@@ -220,6 +220,7 @@ namespace coffee_System
 
         private void Article_Load(object sender, EventArgs e)
         {
+            lblusername.Text = Operations.getNameUser(idAdmin);
             radnotquantity.Checked = true;
             radquantity.Checked = false;
             //fill layout Product
@@ -227,7 +228,7 @@ namespace coffee_System
             //fill combobox Categorie
             remplirCategorie();
             //fill Layout categorie
-          //  remplirLayoutCategorie();
+            remplirLayoutCategorie();
             //focus on NotQuantity
             EnableQuantity();
         }
@@ -336,6 +337,16 @@ namespace coffee_System
         private void btnallitem_Click(object sender, EventArgs e)
         {
             remplirLayoutProduct();
+        }
+
+        private void btnallitem_Click_1(object sender, EventArgs e)
+        {
+            remplirLayoutProduct();
+        }
+
+        private void layoutcategorie_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

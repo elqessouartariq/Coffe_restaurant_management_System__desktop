@@ -30,20 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Credit));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.Servercombobox = new System.Windows.Forms.ComboBox();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.CreditDatagrid = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.Afficherreglementbtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Reglerbtn = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Creditdate = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.CancelCreditFilterbtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.CreditFilterbtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.iDcreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idUSERWORKSERVERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idUSERWORKCASHIERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,14 +46,30 @@
             this.datecreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.montantcreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomUSERWORKDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cREDITDGINFOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dBTD_CoffeeManagement = new coffee_System.DBTD_CoffeeManagement();
-            this.cREDIT_DGINFOTableAdapter = new coffee_System.DBTD_CoffeeManagementTableAdapters.CREDIT_DGINFOTableAdapter();
+            this.Afficherreglementbtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Reglerbtn = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Creditdate = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.CancelCreditFilterbtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.CreditFilterbtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Servercheckbox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.Datecheckbox = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblusername = new System.Windows.Forms.Label();
+            this.home = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.PictureBox();
+            this.dBTD_CoffeeManagement = new coffee_System.DBTD_CoffeeManagement();
+            this.cREDIT_DGINFOTableAdapter = new coffee_System.DBTD_CoffeeManagementTableAdapters.CREDIT_DGINFOTableAdapter();
+            this.coffeeManagement_dbDataSet = new coffee_System.CoffeeManagement_dbDataSet();
+            this.cREDITDGINFOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.CreditDatagrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cREDITDGINFOBindingSource)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.home)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBTD_CoffeeManagement)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coffeeManagement_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cREDITDGINFOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuLabel3
@@ -117,23 +128,23 @@
             this.CreditDatagrid.AllowCustomTheming = false;
             this.CreditDatagrid.AllowUserToAddRows = false;
             this.CreditDatagrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(191)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            this.CreditDatagrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.CreditDatagrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.CreditDatagrid.AutoGenerateColumns = false;
             this.CreditDatagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.CreditDatagrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(240)))), ((int)(((byte)(235)))));
             this.CreditDatagrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CreditDatagrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.CreditDatagrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DarkViolet;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CreditDatagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CreditDatagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.CreditDatagrid.ColumnHeadersHeight = 40;
             this.CreditDatagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDcreDataGridViewTextBoxColumn,
@@ -143,48 +154,102 @@
             this.datecreDataGridViewTextBoxColumn,
             this.montantcreDataGridViewTextBoxColumn,
             this.nomUSERWORKDataGridViewTextBoxColumn});
-            this.CreditDatagrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(191)))), ((int)(((byte)(244)))));
+            this.CreditDatagrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
             this.CreditDatagrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.CreditDatagrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.CreditDatagrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(102)))), ((int)(((byte)(228)))));
+            this.CreditDatagrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.CreditDatagrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.CreditDatagrid.CurrentTheme.BackColor = System.Drawing.Color.DarkViolet;
-            this.CreditDatagrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(178)))), ((int)(((byte)(241)))));
-            this.CreditDatagrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DarkViolet;
+            this.CreditDatagrid.CurrentTheme.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.CreditDatagrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
+            this.CreditDatagrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DarkSlateGray;
             this.CreditDatagrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             this.CreditDatagrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.CreditDatagrid.CurrentTheme.Name = null;
-            this.CreditDatagrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(204)))), ((int)(((byte)(246)))));
+            this.CreditDatagrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.CreditDatagrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.CreditDatagrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.CreditDatagrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(102)))), ((int)(((byte)(228)))));
+            this.CreditDatagrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.CreditDatagrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.CreditDatagrid.DataSource = this.cREDITDGINFOBindingSource;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(204)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(102)))), ((int)(((byte)(228)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CreditDatagrid.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CreditDatagrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.CreditDatagrid.EnableHeadersVisualStyles = false;
-            this.CreditDatagrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(178)))), ((int)(((byte)(241)))));
-            this.CreditDatagrid.HeaderBackColor = System.Drawing.Color.DarkViolet;
+            this.CreditDatagrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
+            this.CreditDatagrid.HeaderBackColor = System.Drawing.Color.DarkSlateGray;
             this.CreditDatagrid.HeaderBgColor = System.Drawing.Color.Empty;
             this.CreditDatagrid.HeaderForeColor = System.Drawing.Color.White;
             this.CreditDatagrid.Location = new System.Drawing.Point(45, 157);
             this.CreditDatagrid.Name = "CreditDatagrid";
             this.CreditDatagrid.ReadOnly = true;
             this.CreditDatagrid.RowHeadersVisible = false;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CreditDatagrid.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CreditDatagrid.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.CreditDatagrid.RowTemplate.Height = 40;
             this.CreditDatagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.CreditDatagrid.Size = new System.Drawing.Size(1253, 491);
             this.CreditDatagrid.TabIndex = 25;
-            this.CreditDatagrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.DarkViolet;
+            this.CreditDatagrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.DarkSlateGray;
             this.CreditDatagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CreditDatagrid_CellClick);
+            this.CreditDatagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CreditDatagrid_CellContentClick);
+            // 
+            // iDcreDataGridViewTextBoxColumn
+            // 
+            this.iDcreDataGridViewTextBoxColumn.DataPropertyName = "ID_cre";
+            this.iDcreDataGridViewTextBoxColumn.HeaderText = "ID_cre";
+            this.iDcreDataGridViewTextBoxColumn.Name = "iDcreDataGridViewTextBoxColumn";
+            this.iDcreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDcreDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // idUSERWORKSERVERDataGridViewTextBoxColumn
+            // 
+            this.idUSERWORKSERVERDataGridViewTextBoxColumn.DataPropertyName = "id_USER_WORK_SERVER";
+            this.idUSERWORKSERVERDataGridViewTextBoxColumn.HeaderText = "id_USER_WORK_SERVER";
+            this.idUSERWORKSERVERDataGridViewTextBoxColumn.Name = "idUSERWORKSERVERDataGridViewTextBoxColumn";
+            this.idUSERWORKSERVERDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idUSERWORKSERVERDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // idUSERWORKCASHIERDataGridViewTextBoxColumn
+            // 
+            this.idUSERWORKCASHIERDataGridViewTextBoxColumn.DataPropertyName = "id_USER_WORK_CASHIER";
+            this.idUSERWORKCASHIERDataGridViewTextBoxColumn.HeaderText = "id_USER_WORK_CASHIER";
+            this.idUSERWORKCASHIERDataGridViewTextBoxColumn.Name = "idUSERWORKCASHIERDataGridViewTextBoxColumn";
+            this.idUSERWORKCASHIERDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idUSERWORKCASHIERDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // statutDataGridViewTextBoxColumn
+            // 
+            this.statutDataGridViewTextBoxColumn.DataPropertyName = "Statut";
+            this.statutDataGridViewTextBoxColumn.HeaderText = "Statut";
+            this.statutDataGridViewTextBoxColumn.Name = "statutDataGridViewTextBoxColumn";
+            this.statutDataGridViewTextBoxColumn.ReadOnly = true;
+            this.statutDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // datecreDataGridViewTextBoxColumn
+            // 
+            this.datecreDataGridViewTextBoxColumn.DataPropertyName = "Date_cre";
+            this.datecreDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.datecreDataGridViewTextBoxColumn.Name = "datecreDataGridViewTextBoxColumn";
+            this.datecreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // montantcreDataGridViewTextBoxColumn
+            // 
+            this.montantcreDataGridViewTextBoxColumn.DataPropertyName = "Montant_cre";
+            this.montantcreDataGridViewTextBoxColumn.HeaderText = "Montant";
+            this.montantcreDataGridViewTextBoxColumn.Name = "montantcreDataGridViewTextBoxColumn";
+            this.montantcreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomUSERWORKDataGridViewTextBoxColumn
+            // 
+            this.nomUSERWORKDataGridViewTextBoxColumn.DataPropertyName = "Nom_USER_WORK";
+            this.nomUSERWORKDataGridViewTextBoxColumn.HeaderText = "Server NAME";
+            this.nomUSERWORKDataGridViewTextBoxColumn.Name = "nomUSERWORKDataGridViewTextBoxColumn";
+            this.nomUSERWORKDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Afficherreglementbtn
             // 
@@ -338,73 +403,6 @@
             this.CreditFilterbtn.TextFont = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
             this.CreditFilterbtn.Click += new System.EventHandler(this.CreditFilterbtn_Click);
             // 
-            // iDcreDataGridViewTextBoxColumn
-            // 
-            this.iDcreDataGridViewTextBoxColumn.DataPropertyName = "ID_cre";
-            this.iDcreDataGridViewTextBoxColumn.HeaderText = "ID_cre";
-            this.iDcreDataGridViewTextBoxColumn.Name = "iDcreDataGridViewTextBoxColumn";
-            this.iDcreDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDcreDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // idUSERWORKSERVERDataGridViewTextBoxColumn
-            // 
-            this.idUSERWORKSERVERDataGridViewTextBoxColumn.DataPropertyName = "id_USER_WORK_SERVER";
-            this.idUSERWORKSERVERDataGridViewTextBoxColumn.HeaderText = "id_USER_WORK_SERVER";
-            this.idUSERWORKSERVERDataGridViewTextBoxColumn.Name = "idUSERWORKSERVERDataGridViewTextBoxColumn";
-            this.idUSERWORKSERVERDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idUSERWORKSERVERDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // idUSERWORKCASHIERDataGridViewTextBoxColumn
-            // 
-            this.idUSERWORKCASHIERDataGridViewTextBoxColumn.DataPropertyName = "id_USER_WORK_CASHIER";
-            this.idUSERWORKCASHIERDataGridViewTextBoxColumn.HeaderText = "id_USER_WORK_CASHIER";
-            this.idUSERWORKCASHIERDataGridViewTextBoxColumn.Name = "idUSERWORKCASHIERDataGridViewTextBoxColumn";
-            this.idUSERWORKCASHIERDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idUSERWORKCASHIERDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // statutDataGridViewTextBoxColumn
-            // 
-            this.statutDataGridViewTextBoxColumn.DataPropertyName = "Statut";
-            this.statutDataGridViewTextBoxColumn.HeaderText = "Statut";
-            this.statutDataGridViewTextBoxColumn.Name = "statutDataGridViewTextBoxColumn";
-            this.statutDataGridViewTextBoxColumn.ReadOnly = true;
-            this.statutDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // datecreDataGridViewTextBoxColumn
-            // 
-            this.datecreDataGridViewTextBoxColumn.DataPropertyName = "Date_cre";
-            this.datecreDataGridViewTextBoxColumn.HeaderText = "Date";
-            this.datecreDataGridViewTextBoxColumn.Name = "datecreDataGridViewTextBoxColumn";
-            this.datecreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // montantcreDataGridViewTextBoxColumn
-            // 
-            this.montantcreDataGridViewTextBoxColumn.DataPropertyName = "Montant_cre";
-            this.montantcreDataGridViewTextBoxColumn.HeaderText = "Montant";
-            this.montantcreDataGridViewTextBoxColumn.Name = "montantcreDataGridViewTextBoxColumn";
-            this.montantcreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nomUSERWORKDataGridViewTextBoxColumn
-            // 
-            this.nomUSERWORKDataGridViewTextBoxColumn.DataPropertyName = "Nom_USER_WORK";
-            this.nomUSERWORKDataGridViewTextBoxColumn.HeaderText = "Server NAME";
-            this.nomUSERWORKDataGridViewTextBoxColumn.Name = "nomUSERWORKDataGridViewTextBoxColumn";
-            this.nomUSERWORKDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cREDITDGINFOBindingSource
-            // 
-            this.cREDITDGINFOBindingSource.DataMember = "CREDIT_DGINFO";
-            this.cREDITDGINFOBindingSource.DataSource = this.dBTD_CoffeeManagement;
-            // 
-            // dBTD_CoffeeManagement
-            // 
-            this.dBTD_CoffeeManagement.DataSetName = "DBTD_CoffeeManagement";
-            this.dBTD_CoffeeManagement.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cREDIT_DGINFOTableAdapter
-            // 
-            this.cREDIT_DGINFOTableAdapter.ClearBeforeFill = true;
-            // 
             // Servercheckbox
             // 
             this.Servercheckbox.AllowBindingControlAnimation = true;
@@ -511,11 +509,108 @@
             this.Datecheckbox.ThreeState = false;
             this.Datecheckbox.ToolTipText = null;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(24)))), ((int)(((byte)(36)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblusername);
+            this.panel1.Controls.Add(this.home);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.close);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel1.Location = new System.Drawing.Point(12, 6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1286, 36);
+            this.panel1.TabIndex = 58;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(573, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Credit";
+            // 
+            // lblusername
+            // 
+            this.lblusername.AutoSize = true;
+            this.lblusername.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusername.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblusername.Location = new System.Drawing.Point(144, 10);
+            this.lblusername.Name = "lblusername";
+            this.lblusername.Size = new System.Drawing.Size(136, 17);
+            this.lblusername.TabIndex = 6;
+            this.lblusername.Text = "(ELQESSOUAR TARIQ)";
+            // 
+            // home
+            // 
+            this.home.BackColor = System.Drawing.Color.Transparent;
+            this.home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.home.Image = ((System.Drawing.Image)(resources.GetObject("home.Image")));
+            this.home.Location = new System.Drawing.Point(8, 3);
+            this.home.Name = "home";
+            this.home.Size = new System.Drawing.Size(29, 29);
+            this.home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.home.TabIndex = 2;
+            this.home.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(38, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ESTA Coffee";
+            // 
+            // close
+            // 
+            this.close.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.close.BackColor = System.Drawing.Color.Transparent;
+            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close.Image = ((System.Drawing.Image)(resources.GetObject("close.Image")));
+            this.close.Location = new System.Drawing.Point(1252, 7);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(29, 20);
+            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close.TabIndex = 0;
+            this.close.TabStop = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
+            // dBTD_CoffeeManagement
+            // 
+            this.dBTD_CoffeeManagement.DataSetName = "DBTD_CoffeeManagement";
+            this.dBTD_CoffeeManagement.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cREDIT_DGINFOTableAdapter
+            // 
+            this.cREDIT_DGINFOTableAdapter.ClearBeforeFill = true;
+            // 
+            // coffeeManagement_dbDataSet
+            // 
+            this.coffeeManagement_dbDataSet.DataSetName = "CoffeeManagement_dbDataSet";
+            this.coffeeManagement_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cREDITDGINFOBindingSource
+            // 
+            this.cREDITDGINFOBindingSource.DataMember = "CREDIT_DGINFO";
+            this.cREDITDGINFOBindingSource.DataSource = this.dBTD_CoffeeManagement;
+            // 
             // Credit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1312, 660);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Servercheckbox);
             this.Controls.Add(this.Datecheckbox);
             this.Controls.Add(this.CancelCreditFilterbtn);
@@ -529,12 +624,18 @@
             this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.Creditdate);
             this.ForeColor = System.Drawing.SystemColors.Control;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Credit";
             this.Text = "Credit";
             this.Load += new System.EventHandler(this.Credit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CreditDatagrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cREDITDGINFOBindingSource)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.home)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBTD_CoffeeManagement)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coffeeManagement_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cREDITDGINFOBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -550,9 +651,17 @@
         private Bunifu.UI.WinForms.BunifuDataGridView CreditDatagrid;
         private Bunifu.Framework.UI.BunifuThinButton2 Reglerbtn;
         private Bunifu.Framework.UI.BunifuThinButton2 Afficherreglementbtn;
+        private Bunifu.Framework.UI.BunifuFlatButton CancelCreditFilterbtn;
+        private Bunifu.Framework.UI.BunifuFlatButton CreditFilterbtn;
+        private Bunifu.UI.WinForms.BunifuCheckBox Servercheckbox;
+        private Bunifu.UI.WinForms.BunifuCheckBox Datecheckbox;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblusername;
+        private System.Windows.Forms.PictureBox home;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox close;
         private DBTD_CoffeeManagement dBTD_CoffeeManagement;
-        private System.Windows.Forms.BindingSource cREDITDGINFOBindingSource;
-        private DBTD_CoffeeManagementTableAdapters.CREDIT_DGINFOTableAdapter cREDIT_DGINFOTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDcreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idUSERWORKSERVERDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idUSERWORKCASHIERDataGridViewTextBoxColumn;
@@ -560,9 +669,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn datecreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn montantcreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomUSERWORKDataGridViewTextBoxColumn;
-        private Bunifu.Framework.UI.BunifuFlatButton CancelCreditFilterbtn;
-        private Bunifu.Framework.UI.BunifuFlatButton CreditFilterbtn;
-        private Bunifu.UI.WinForms.BunifuCheckBox Servercheckbox;
-        private Bunifu.UI.WinForms.BunifuCheckBox Datecheckbox;
+        private DBTD_CoffeeManagementTableAdapters.CREDIT_DGINFOTableAdapter cREDIT_DGINFOTableAdapter;
+        private CoffeeManagement_dbDataSet coffeeManagement_dbDataSet;
+        private System.Windows.Forms.BindingSource cREDITDGINFOBindingSource;
     }
 }

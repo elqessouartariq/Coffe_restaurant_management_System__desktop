@@ -60,69 +60,44 @@ namespace coffee_System
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties31 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties32 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties33 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties34 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties35 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties36 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnClear = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.radnotquantity = new Bunifu.UI.WinForms.BunifuRadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.radquantity = new Bunifu.UI.WinForms.BunifuRadioButton();
+            this.cmbcategorie = new System.Windows.Forms.ComboBox();
+            this.layoutcategorie = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblusername = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.layoutproduct = new System.Windows.Forms.FlowLayoutPanel();
+            this.errorNumeric = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnClear = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtqte = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.btnimport = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnupdate = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnadd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.cmbcategorie = new System.Windows.Forms.ComboBox();
             this.txtprice = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.txtdesignation = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.picproduct = new System.Windows.Forms.PictureBox();
             this.txtsearch = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.layoutcategorie = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnallitem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btncoffee = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btncolddrink = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btnhotdrink = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btnfood = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btndessert = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblusername = new System.Windows.Forms.Label();
             this.setting = new System.Windows.Forms.PictureBox();
             this.home = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.reduite = new System.Windows.Forms.PictureBox();
             this.minimise = new System.Windows.Forms.PictureBox();
             this.close = new System.Windows.Forms.PictureBox();
-            this.layoutproduct = new System.Windows.Forms.FlowLayoutPanel();
-            this.errorNumeric = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picproduct)).BeginInit();
-            this.layoutcategorie.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picproduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.setting)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.home)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reduite)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimise)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -148,6 +123,159 @@ namespace coffee_System
             this.panel2.Size = new System.Drawing.Size(854, 236);
             this.panel2.TabIndex = 60;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // radnotquantity
+            // 
+            this.radnotquantity.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radnotquantity.Checked = false;
+            this.radnotquantity.Location = new System.Drawing.Point(310, 163);
+            this.radnotquantity.Name = "radnotquantity";
+            this.radnotquantity.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
+            this.radnotquantity.RadioColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.radnotquantity.Size = new System.Drawing.Size(25, 25);
+            this.radnotquantity.TabIndex = 67;
+            this.radnotquantity.Text = null;
+            this.radnotquantity.CheckedChanged += new System.EventHandler(this.radnotquantity_CheckedChanged);
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(334, 165);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(143, 21);
+            this.label4.TabIndex = 66;
+            this.label4.Text = "Without quantity";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(334, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 21);
+            this.label3.TabIndex = 65;
+            this.label3.Text = "With quantity";
+            // 
+            // radquantity
+            // 
+            this.radquantity.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.radquantity.Checked = true;
+            this.radquantity.Location = new System.Drawing.Point(310, 128);
+            this.radquantity.Name = "radquantity";
+            this.radquantity.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
+            this.radquantity.RadioColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.radquantity.Size = new System.Drawing.Size(25, 25);
+            this.radquantity.TabIndex = 63;
+            this.radquantity.Text = null;
+            this.radquantity.CheckedChanged += new System.EventHandler(this.radquantity_CheckedChanged);
+            // 
+            // cmbcategorie
+            // 
+            this.cmbcategorie.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmbcategorie.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbcategorie.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbcategorie.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.cmbcategorie.FormattingEnabled = true;
+            this.cmbcategorie.Location = new System.Drawing.Point(300, 47);
+            this.cmbcategorie.Name = "cmbcategorie";
+            this.cmbcategorie.Size = new System.Drawing.Size(254, 25);
+            this.cmbcategorie.TabIndex = 57;
+            this.cmbcategorie.Text = "Category";
+            this.cmbcategorie.SelectedIndexChanged += new System.EventHandler(this.cmbcategorie_SelectedIndexChanged);
+            // 
+            // layoutcategorie
+            // 
+            this.layoutcategorie.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.layoutcategorie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(24)))), ((int)(((byte)(36)))));
+            this.layoutcategorie.Location = new System.Drawing.Point(15, 46);
+            this.layoutcategorie.Name = "layoutcategorie";
+            this.layoutcategorie.Size = new System.Drawing.Size(160, 541);
+            this.layoutcategorie.TabIndex = 59;
+            this.layoutcategorie.Paint += new System.Windows.Forms.PaintEventHandler(this.layoutcategorie_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(24)))), ((int)(((byte)(36)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblusername);
+            this.panel1.Controls.Add(this.setting);
+            this.panel1.Controls.Add(this.home);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.reduite);
+            this.panel1.Controls.Add(this.minimise);
+            this.panel1.Controls.Add(this.close);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel1.Location = new System.Drawing.Point(14, 4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1021, 36);
+            this.panel1.TabIndex = 57;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(503, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 25);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Items";
+            // 
+            // lblusername
+            // 
+            this.lblusername.AutoSize = true;
+            this.lblusername.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusername.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblusername.Location = new System.Drawing.Point(140, 11);
+            this.lblusername.Name = "lblusername";
+            this.lblusername.Size = new System.Drawing.Size(100, 17);
+            this.lblusername.TabIndex = 5;
+            this.lblusername.Text = "(Rhandi Taher)";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(38, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ESTA Coffee";
+            // 
+            // layoutproduct
+            // 
+            this.layoutproduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.layoutproduct.AutoScroll = true;
+            this.layoutproduct.Location = new System.Drawing.Point(181, 288);
+            this.layoutproduct.Margin = new System.Windows.Forms.Padding(20);
+            this.layoutproduct.Name = "layoutproduct";
+            this.layoutproduct.Size = new System.Drawing.Size(854, 310);
+            this.layoutproduct.TabIndex = 58;
+            // 
+            // errorNumeric
+            // 
+            this.errorNumeric.ContainerControl = this;
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
             // 
             // btnClear
             // 
@@ -213,58 +341,6 @@ namespace coffee_System
             this.btnClear.TextMarginLeft = 0;
             this.btnClear.UseDefaultRadiusAndThickness = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // radnotquantity
-            // 
-            this.radnotquantity.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radnotquantity.Checked = false;
-            this.radnotquantity.Location = new System.Drawing.Point(310, 163);
-            this.radnotquantity.Name = "radnotquantity";
-            this.radnotquantity.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            this.radnotquantity.RadioColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.radnotquantity.Size = new System.Drawing.Size(25, 25);
-            this.radnotquantity.TabIndex = 67;
-            this.radnotquantity.Text = null;
-            this.radnotquantity.CheckedChanged += new System.EventHandler(this.radnotquantity_CheckedChanged);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(334, 165);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 21);
-            this.label4.TabIndex = 66;
-            this.label4.Text = "Without quantity";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(334, 130);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 21);
-            this.label3.TabIndex = 65;
-            this.label3.Text = "With quantity";
-            // 
-            // radquantity
-            // 
-            this.radquantity.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.radquantity.Checked = true;
-            this.radquantity.Location = new System.Drawing.Point(310, 128);
-            this.radquantity.Name = "radquantity";
-            this.radquantity.OutlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            this.radquantity.RadioColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.radquantity.Size = new System.Drawing.Size(25, 25);
-            this.radquantity.TabIndex = 63;
-            this.radquantity.Text = null;
-            this.radquantity.CheckedChanged += new System.EventHandler(this.radquantity_CheckedChanged);
             // 
             // txtqte
             // 
@@ -336,7 +412,7 @@ namespace coffee_System
             this.txtqte.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtqte.TextMarginBottom = 0;
             this.txtqte.TextMarginLeft = 5;
-            this.txtqte.TextMarginTop = 0;
+          //  this.txtqte.TextMarginTop = 0;
             this.txtqte.TextPlaceholder = "Quantity";
             this.txtqte.UseSystemPasswordChar = false;
             this.txtqte.WordWrap = true;
@@ -536,20 +612,6 @@ namespace coffee_System
             this.btnadd.TextMarginLeft = 0;
             this.btnadd.UseDefaultRadiusAndThickness = true;
             this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
-            // 
-            // cmbcategorie
-            // 
-            this.cmbcategorie.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cmbcategorie.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.cmbcategorie.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbcategorie.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.cmbcategorie.FormattingEnabled = true;
-            this.cmbcategorie.Location = new System.Drawing.Point(300, 47);
-            this.cmbcategorie.Name = "cmbcategorie";
-            this.cmbcategorie.Size = new System.Drawing.Size(254, 25);
-            this.cmbcategorie.TabIndex = 57;
-            this.cmbcategorie.Text = "Category";
-            this.cmbcategorie.SelectedIndexChanged += new System.EventHandler(this.cmbcategorie_SelectedIndexChanged);
             // 
             // txtprice
             // 
@@ -788,446 +850,6 @@ namespace coffee_System
             this.txtsearch.TextChanged += new System.EventHandler(this.txtsearch_TextChanged);
             this.txtsearch.OnIconRightClick += new System.EventHandler(this.txtsearch_OnIconRightClick);
             // 
-            // layoutcategorie
-            // 
-            this.layoutcategorie.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.layoutcategorie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(24)))), ((int)(((byte)(36)))));
-            this.layoutcategorie.Controls.Add(this.btnallitem);
-            this.layoutcategorie.Controls.Add(this.btncoffee);
-            this.layoutcategorie.Controls.Add(this.btncolddrink);
-            this.layoutcategorie.Controls.Add(this.btnhotdrink);
-            this.layoutcategorie.Controls.Add(this.btnfood);
-            this.layoutcategorie.Controls.Add(this.btndessert);
-            this.layoutcategorie.Location = new System.Drawing.Point(15, 48);
-            this.layoutcategorie.Name = "layoutcategorie";
-            this.layoutcategorie.Size = new System.Drawing.Size(160, 539);
-            this.layoutcategorie.TabIndex = 59;
-            // 
-            // btnallitem
-            // 
-            this.btnallitem.AllowToggling = false;
-            this.btnallitem.AnimationSpeed = 200;
-            this.btnallitem.AutoGenerateColors = false;
-            this.btnallitem.BackColor = System.Drawing.Color.Transparent;
-            this.btnallitem.BackColor1 = System.Drawing.Color.Transparent;
-            this.btnallitem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnallitem.BackgroundImage")));
-            this.btnallitem.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnallitem.ButtonText = "All Items";
-            this.btnallitem.ButtonTextMarginLeft = 0;
-            this.btnallitem.ColorContrastOnClick = 45;
-            this.btnallitem.ColorContrastOnHover = 45;
-            this.btnallitem.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnallitem.CustomizableEdges = borderEdges5;
-            this.btnallitem.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnallitem.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnallitem.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnallitem.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnallitem.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnallitem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.btnallitem.ForeColor = System.Drawing.Color.White;
-            this.btnallitem.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnallitem.IconMarginLeft = 11;
-            this.btnallitem.IconPadding = 10;
-            this.btnallitem.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnallitem.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btnallitem.IdleBorderRadius = 3;
-            this.btnallitem.IdleBorderThickness = 1;
-            this.btnallitem.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnallitem.IdleIconLeftImage = global::coffee_System.Properties.Resources.icons8_afficher_toutes_les_vues_50__1_;
-            this.btnallitem.IdleIconRightImage = null;
-            this.btnallitem.IndicateFocus = true;
-            this.btnallitem.Location = new System.Drawing.Point(3, 3);
-            this.btnallitem.Name = "btnallitem";
-            stateProperties25.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties25.BorderRadius = 3;
-            stateProperties25.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties25.BorderThickness = 1;
-            stateProperties25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties25.ForeColor = System.Drawing.Color.White;
-            stateProperties25.IconLeftImage = null;
-            stateProperties25.IconRightImage = null;
-            this.btnallitem.onHoverState = stateProperties25;
-            stateProperties26.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties26.BorderRadius = 3;
-            stateProperties26.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties26.BorderThickness = 1;
-            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties26.ForeColor = System.Drawing.Color.White;
-            stateProperties26.IconLeftImage = null;
-            stateProperties26.IconRightImage = null;
-            this.btnallitem.OnPressedState = stateProperties26;
-            this.btnallitem.Size = new System.Drawing.Size(154, 45);
-            this.btnallitem.TabIndex = 39;
-            this.btnallitem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnallitem.TextMarginLeft = 0;
-            this.btnallitem.UseDefaultRadiusAndThickness = true;
-            this.btnallitem.Click += new System.EventHandler(this.btnallitem_Click);
-            // 
-            // btncoffee
-            // 
-            this.btncoffee.AllowToggling = false;
-            this.btncoffee.AnimationSpeed = 200;
-            this.btncoffee.AutoGenerateColors = false;
-            this.btncoffee.BackColor = System.Drawing.Color.Transparent;
-            this.btncoffee.BackColor1 = System.Drawing.Color.Transparent;
-            this.btncoffee.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncoffee.BackgroundImage")));
-            this.btncoffee.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btncoffee.ButtonText = "Coffee";
-            this.btncoffee.ButtonTextMarginLeft = 0;
-            this.btncoffee.ColorContrastOnClick = 45;
-            this.btncoffee.ColorContrastOnHover = 45;
-            this.btncoffee.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btncoffee.CustomizableEdges = borderEdges6;
-            this.btncoffee.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btncoffee.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btncoffee.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btncoffee.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btncoffee.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btncoffee.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.btncoffee.ForeColor = System.Drawing.Color.White;
-            this.btncoffee.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btncoffee.IconMarginLeft = 11;
-            this.btncoffee.IconPadding = 10;
-            this.btncoffee.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btncoffee.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btncoffee.IdleBorderRadius = 3;
-            this.btncoffee.IdleBorderThickness = 1;
-            this.btncoffee.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btncoffee.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btncoffee.IdleIconLeftImage")));
-            this.btncoffee.IdleIconRightImage = null;
-            this.btncoffee.IndicateFocus = true;
-            this.btncoffee.Location = new System.Drawing.Point(3, 54);
-            this.btncoffee.Name = "btncoffee";
-            stateProperties27.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties27.BorderRadius = 3;
-            stateProperties27.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties27.BorderThickness = 1;
-            stateProperties27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties27.ForeColor = System.Drawing.Color.White;
-            stateProperties27.IconLeftImage = null;
-            stateProperties27.IconRightImage = null;
-            this.btncoffee.onHoverState = stateProperties27;
-            stateProperties28.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties28.BorderRadius = 3;
-            stateProperties28.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties28.BorderThickness = 1;
-            stateProperties28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties28.ForeColor = System.Drawing.Color.White;
-            stateProperties28.IconLeftImage = null;
-            stateProperties28.IconRightImage = null;
-            this.btncoffee.OnPressedState = stateProperties28;
-            this.btncoffee.Size = new System.Drawing.Size(154, 45);
-            this.btncoffee.TabIndex = 40;
-            this.btncoffee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btncoffee.TextMarginLeft = 0;
-            this.btncoffee.UseDefaultRadiusAndThickness = true;
-            // 
-            // btncolddrink
-            // 
-            this.btncolddrink.AllowToggling = false;
-            this.btncolddrink.AnimationSpeed = 200;
-            this.btncolddrink.AutoGenerateColors = false;
-            this.btncolddrink.BackColor = System.Drawing.Color.Transparent;
-            this.btncolddrink.BackColor1 = System.Drawing.Color.Transparent;
-            this.btncolddrink.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btncolddrink.BackgroundImage")));
-            this.btncolddrink.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btncolddrink.ButtonText = "Cold Drink";
-            this.btncolddrink.ButtonTextMarginLeft = 0;
-            this.btncolddrink.ColorContrastOnClick = 45;
-            this.btncolddrink.ColorContrastOnHover = 45;
-            this.btncolddrink.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btncolddrink.CustomizableEdges = borderEdges7;
-            this.btncolddrink.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btncolddrink.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btncolddrink.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btncolddrink.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btncolddrink.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btncolddrink.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.btncolddrink.ForeColor = System.Drawing.Color.White;
-            this.btncolddrink.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btncolddrink.IconMarginLeft = 11;
-            this.btncolddrink.IconPadding = 10;
-            this.btncolddrink.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btncolddrink.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btncolddrink.IdleBorderRadius = 3;
-            this.btncolddrink.IdleBorderThickness = 1;
-            this.btncolddrink.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btncolddrink.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btncolddrink.IdleIconLeftImage")));
-            this.btncolddrink.IdleIconRightImage = null;
-            this.btncolddrink.IndicateFocus = true;
-            this.btncolddrink.Location = new System.Drawing.Point(3, 105);
-            this.btncolddrink.Name = "btncolddrink";
-            stateProperties29.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties29.BorderRadius = 3;
-            stateProperties29.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties29.BorderThickness = 1;
-            stateProperties29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties29.ForeColor = System.Drawing.Color.White;
-            stateProperties29.IconLeftImage = null;
-            stateProperties29.IconRightImage = null;
-            this.btncolddrink.onHoverState = stateProperties29;
-            stateProperties30.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties30.BorderRadius = 3;
-            stateProperties30.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties30.BorderThickness = 1;
-            stateProperties30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties30.ForeColor = System.Drawing.Color.White;
-            stateProperties30.IconLeftImage = null;
-            stateProperties30.IconRightImage = null;
-            this.btncolddrink.OnPressedState = stateProperties30;
-            this.btncolddrink.Size = new System.Drawing.Size(154, 45);
-            this.btncolddrink.TabIndex = 41;
-            this.btncolddrink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btncolddrink.TextMarginLeft = 0;
-            this.btncolddrink.UseDefaultRadiusAndThickness = true;
-            // 
-            // btnhotdrink
-            // 
-            this.btnhotdrink.AllowToggling = false;
-            this.btnhotdrink.AnimationSpeed = 200;
-            this.btnhotdrink.AutoGenerateColors = false;
-            this.btnhotdrink.BackColor = System.Drawing.Color.Transparent;
-            this.btnhotdrink.BackColor1 = System.Drawing.Color.Transparent;
-            this.btnhotdrink.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnhotdrink.BackgroundImage")));
-            this.btnhotdrink.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnhotdrink.ButtonText = "Hot Drink";
-            this.btnhotdrink.ButtonTextMarginLeft = 0;
-            this.btnhotdrink.ColorContrastOnClick = 45;
-            this.btnhotdrink.ColorContrastOnHover = 45;
-            this.btnhotdrink.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnhotdrink.CustomizableEdges = borderEdges8;
-            this.btnhotdrink.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnhotdrink.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnhotdrink.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnhotdrink.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnhotdrink.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnhotdrink.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.btnhotdrink.ForeColor = System.Drawing.Color.White;
-            this.btnhotdrink.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnhotdrink.IconMarginLeft = 11;
-            this.btnhotdrink.IconPadding = 10;
-            this.btnhotdrink.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnhotdrink.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btnhotdrink.IdleBorderRadius = 3;
-            this.btnhotdrink.IdleBorderThickness = 1;
-            this.btnhotdrink.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnhotdrink.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnhotdrink.IdleIconLeftImage")));
-            this.btnhotdrink.IdleIconRightImage = null;
-            this.btnhotdrink.IndicateFocus = true;
-            this.btnhotdrink.Location = new System.Drawing.Point(3, 156);
-            this.btnhotdrink.Name = "btnhotdrink";
-            stateProperties31.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties31.BorderRadius = 3;
-            stateProperties31.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties31.BorderThickness = 1;
-            stateProperties31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties31.ForeColor = System.Drawing.Color.White;
-            stateProperties31.IconLeftImage = null;
-            stateProperties31.IconRightImage = null;
-            this.btnhotdrink.onHoverState = stateProperties31;
-            stateProperties32.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties32.BorderRadius = 3;
-            stateProperties32.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties32.BorderThickness = 1;
-            stateProperties32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties32.ForeColor = System.Drawing.Color.White;
-            stateProperties32.IconLeftImage = null;
-            stateProperties32.IconRightImage = null;
-            this.btnhotdrink.OnPressedState = stateProperties32;
-            this.btnhotdrink.Size = new System.Drawing.Size(154, 45);
-            this.btnhotdrink.TabIndex = 42;
-            this.btnhotdrink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnhotdrink.TextMarginLeft = 0;
-            this.btnhotdrink.UseDefaultRadiusAndThickness = true;
-            // 
-            // btnfood
-            // 
-            this.btnfood.AllowToggling = false;
-            this.btnfood.AnimationSpeed = 200;
-            this.btnfood.AutoGenerateColors = false;
-            this.btnfood.BackColor = System.Drawing.Color.Transparent;
-            this.btnfood.BackColor1 = System.Drawing.Color.Transparent;
-            this.btnfood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnfood.BackgroundImage")));
-            this.btnfood.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnfood.ButtonText = "Food";
-            this.btnfood.ButtonTextMarginLeft = 0;
-            this.btnfood.ColorContrastOnClick = 45;
-            this.btnfood.ColorContrastOnHover = 45;
-            this.btnfood.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btnfood.CustomizableEdges = borderEdges9;
-            this.btnfood.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnfood.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnfood.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnfood.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnfood.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnfood.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.btnfood.ForeColor = System.Drawing.Color.White;
-            this.btnfood.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnfood.IconMarginLeft = 11;
-            this.btnfood.IconPadding = 10;
-            this.btnfood.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnfood.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btnfood.IdleBorderRadius = 3;
-            this.btnfood.IdleBorderThickness = 1;
-            this.btnfood.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnfood.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnfood.IdleIconLeftImage")));
-            this.btnfood.IdleIconRightImage = null;
-            this.btnfood.IndicateFocus = true;
-            this.btnfood.Location = new System.Drawing.Point(3, 207);
-            this.btnfood.Name = "btnfood";
-            stateProperties33.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties33.BorderRadius = 3;
-            stateProperties33.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties33.BorderThickness = 1;
-            stateProperties33.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties33.ForeColor = System.Drawing.Color.White;
-            stateProperties33.IconLeftImage = null;
-            stateProperties33.IconRightImage = null;
-            this.btnfood.onHoverState = stateProperties33;
-            stateProperties34.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties34.BorderRadius = 3;
-            stateProperties34.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties34.BorderThickness = 1;
-            stateProperties34.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties34.ForeColor = System.Drawing.Color.White;
-            stateProperties34.IconLeftImage = null;
-            stateProperties34.IconRightImage = null;
-            this.btnfood.OnPressedState = stateProperties34;
-            this.btnfood.Size = new System.Drawing.Size(154, 45);
-            this.btnfood.TabIndex = 43;
-            this.btnfood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnfood.TextMarginLeft = 0;
-            this.btnfood.UseDefaultRadiusAndThickness = true;
-            // 
-            // btndessert
-            // 
-            this.btndessert.AllowToggling = false;
-            this.btndessert.AnimationSpeed = 200;
-            this.btndessert.AutoGenerateColors = false;
-            this.btndessert.BackColor = System.Drawing.Color.Transparent;
-            this.btndessert.BackColor1 = System.Drawing.Color.Transparent;
-            this.btndessert.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btndessert.BackgroundImage")));
-            this.btndessert.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btndessert.ButtonText = "Dessert";
-            this.btndessert.ButtonTextMarginLeft = 0;
-            this.btndessert.ColorContrastOnClick = 45;
-            this.btndessert.ColorContrastOnHover = 45;
-            this.btndessert.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btndessert.CustomizableEdges = borderEdges10;
-            this.btndessert.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btndessert.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btndessert.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btndessert.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btndessert.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btndessert.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.btndessert.ForeColor = System.Drawing.Color.White;
-            this.btndessert.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btndessert.IconMarginLeft = 11;
-            this.btndessert.IconPadding = 10;
-            this.btndessert.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btndessert.IdleBorderColor = System.Drawing.Color.Transparent;
-            this.btndessert.IdleBorderRadius = 3;
-            this.btndessert.IdleBorderThickness = 1;
-            this.btndessert.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btndessert.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btndessert.IdleIconLeftImage")));
-            this.btndessert.IdleIconRightImage = null;
-            this.btndessert.IndicateFocus = true;
-            this.btndessert.Location = new System.Drawing.Point(3, 258);
-            this.btndessert.Name = "btndessert";
-            stateProperties35.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties35.BorderRadius = 3;
-            stateProperties35.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties35.BorderThickness = 1;
-            stateProperties35.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties35.ForeColor = System.Drawing.Color.White;
-            stateProperties35.IconLeftImage = null;
-            stateProperties35.IconRightImage = null;
-            this.btndessert.onHoverState = stateProperties35;
-            stateProperties36.BorderColor = System.Drawing.Color.Transparent;
-            stateProperties36.BorderRadius = 3;
-            stateProperties36.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties36.BorderThickness = 1;
-            stateProperties36.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(170)))), ((int)(((byte)(46)))));
-            stateProperties36.ForeColor = System.Drawing.Color.White;
-            stateProperties36.IconLeftImage = null;
-            stateProperties36.IconRightImage = null;
-            this.btndessert.OnPressedState = stateProperties36;
-            this.btndessert.Size = new System.Drawing.Size(154, 45);
-            this.btndessert.TabIndex = 44;
-            this.btndessert.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btndessert.TextMarginLeft = 0;
-            this.btndessert.UseDefaultRadiusAndThickness = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(24)))), ((int)(((byte)(36)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.lblusername);
-            this.panel1.Controls.Add(this.setting);
-            this.panel1.Controls.Add(this.home);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.reduite);
-            this.panel1.Controls.Add(this.minimise);
-            this.panel1.Controls.Add(this.close);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel1.Location = new System.Drawing.Point(14, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1021, 36);
-            this.panel1.TabIndex = 57;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
-            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
-            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(503, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Items";
-            // 
-            // lblusername
-            // 
-            this.lblusername.AutoSize = true;
-            this.lblusername.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblusername.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lblusername.Location = new System.Drawing.Point(140, 11);
-            this.lblusername.Name = "lblusername";
-            this.lblusername.Size = new System.Drawing.Size(100, 17);
-            this.lblusername.TabIndex = 5;
-            this.lblusername.Text = "(Rhandi Taher)";
-            // 
             // setting
             // 
             this.setting.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1253,17 +875,6 @@ namespace coffee_System
             this.home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.home.TabIndex = 2;
             this.home.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(38, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ESTA Coffee";
             // 
             // reduite
             // 
@@ -1310,26 +921,6 @@ namespace coffee_System
             this.close.TabStop = false;
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
-            // layoutproduct
-            // 
-            this.layoutproduct.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.layoutproduct.AutoScroll = true;
-            this.layoutproduct.Location = new System.Drawing.Point(181, 288);
-            this.layoutproduct.Margin = new System.Windows.Forms.Padding(20);
-            this.layoutproduct.Name = "layoutproduct";
-            this.layoutproduct.Size = new System.Drawing.Size(854, 310);
-            this.layoutproduct.TabIndex = 58;
-            // 
-            // errorNumeric
-            // 
-            this.errorNumeric.ContainerControl = this;
-            // 
-            // errorProvider
-            // 
-            this.errorProvider.ContainerControl = this;
-            // 
             // Article
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1346,17 +937,16 @@ namespace coffee_System
             this.Load += new System.EventHandler(this.Article_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picproduct)).EndInit();
-            this.layoutcategorie.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picproduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.setting)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.home)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reduite)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimise)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1396,12 +986,6 @@ namespace coffee_System
         private Items.prd prd11;
         private Items.prd prd12;
         private Items.prd prd13;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnallitem;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btncoffee;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btncolddrink;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnhotdrink;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnfood;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btndessert;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private Bunifu.UI.WinForms.BunifuRadioButton radquantity;

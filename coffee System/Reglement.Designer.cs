@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reglement));
             this.ReglementDatagrid = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.iDregDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,9 +58,18 @@
             this.reglement_MoreTableAdapter = new coffee_System.DBTD_CoffeeManagementTableAdapters.Reglement_MoreTableAdapter();
             this.Datecheckbox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.Servercheckbox = new Bunifu.UI.WinForms.BunifuCheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblusername = new System.Windows.Forms.Label();
+            this.home = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.close = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ReglementDatagrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reglementMoreBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBTD_CoffeeManagement)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.home)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             this.SuspendLayout();
             // 
             // ReglementDatagrid
@@ -68,24 +77,24 @@
             this.ReglementDatagrid.AllowCustomTheming = false;
             this.ReglementDatagrid.AllowUserToAddRows = false;
             this.ReglementDatagrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(191)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.ReglementDatagrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            this.ReglementDatagrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.ReglementDatagrid.AutoGenerateColumns = false;
             this.ReglementDatagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ReglementDatagrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(240)))), ((int)(((byte)(235)))));
             this.ReglementDatagrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ReglementDatagrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ReglementDatagrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkViolet;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ReglementDatagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ReglementDatagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.ReglementDatagrid.ColumnHeadersHeight = 40;
             this.ReglementDatagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDregDataGridViewTextBoxColumn,
@@ -96,45 +105,45 @@
             this.montantregDataGridViewTextBoxColumn,
             this.nomUSERWORKDataGridViewTextBoxColumn,
             this.statutDataGridViewTextBoxColumn});
-            this.ReglementDatagrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(191)))), ((int)(((byte)(244)))));
+            this.ReglementDatagrid.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(211)))), ((int)(((byte)(211)))));
             this.ReglementDatagrid.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ReglementDatagrid.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.ReglementDatagrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(102)))), ((int)(((byte)(228)))));
+            this.ReglementDatagrid.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.ReglementDatagrid.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.ReglementDatagrid.CurrentTheme.BackColor = System.Drawing.Color.DarkViolet;
-            this.ReglementDatagrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(178)))), ((int)(((byte)(241)))));
-            this.ReglementDatagrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DarkViolet;
+            this.ReglementDatagrid.CurrentTheme.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ReglementDatagrid.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
+            this.ReglementDatagrid.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ReglementDatagrid.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             this.ReglementDatagrid.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.ReglementDatagrid.CurrentTheme.Name = null;
-            this.ReglementDatagrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(204)))), ((int)(((byte)(246)))));
+            this.ReglementDatagrid.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.ReglementDatagrid.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ReglementDatagrid.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.ReglementDatagrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(102)))), ((int)(((byte)(228)))));
+            this.ReglementDatagrid.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.ReglementDatagrid.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.ReglementDatagrid.DataSource = this.reglementMoreBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(204)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(102)))), ((int)(((byte)(228)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ReglementDatagrid.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ReglementDatagrid.DefaultCellStyle = dataGridViewCellStyle12;
             this.ReglementDatagrid.EnableHeadersVisualStyles = false;
-            this.ReglementDatagrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(178)))), ((int)(((byte)(241)))));
-            this.ReglementDatagrid.HeaderBackColor = System.Drawing.Color.DarkViolet;
+            this.ReglementDatagrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
+            this.ReglementDatagrid.HeaderBackColor = System.Drawing.Color.DarkSlateGray;
             this.ReglementDatagrid.HeaderBgColor = System.Drawing.Color.Empty;
             this.ReglementDatagrid.HeaderForeColor = System.Drawing.Color.White;
-            this.ReglementDatagrid.Location = new System.Drawing.Point(32, 136);
+            this.ReglementDatagrid.Location = new System.Drawing.Point(32, 155);
             this.ReglementDatagrid.Name = "ReglementDatagrid";
             this.ReglementDatagrid.ReadOnly = true;
             this.ReglementDatagrid.RowHeadersVisible = false;
             this.ReglementDatagrid.RowTemplate.Height = 40;
             this.ReglementDatagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ReglementDatagrid.Size = new System.Drawing.Size(1267, 512);
+            this.ReglementDatagrid.Size = new System.Drawing.Size(1267, 493);
             this.ReglementDatagrid.TabIndex = 36;
-            this.ReglementDatagrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.DarkViolet;
+            this.ReglementDatagrid.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.DarkSlateGray;
             this.ReglementDatagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ReglementDatagrid_CellClick);
             // 
             // iDregDataGridViewTextBoxColumn
@@ -172,8 +181,8 @@
             // dateregDataGridViewTextBoxColumn
             // 
             this.dateregDataGridViewTextBoxColumn.DataPropertyName = "Date_reg";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dateregDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dateregDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle9;
             this.dateregDataGridViewTextBoxColumn.HeaderText = "Date Reglement";
             this.dateregDataGridViewTextBoxColumn.Name = "dateregDataGridViewTextBoxColumn";
             this.dateregDataGridViewTextBoxColumn.ReadOnly = true;
@@ -181,8 +190,8 @@
             // montantregDataGridViewTextBoxColumn
             // 
             this.montantregDataGridViewTextBoxColumn.DataPropertyName = "Montant_reg";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.montantregDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.montantregDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle10;
             this.montantregDataGridViewTextBoxColumn.HeaderText = "Montant Reglement";
             this.montantregDataGridViewTextBoxColumn.Name = "montantregDataGridViewTextBoxColumn";
             this.montantregDataGridViewTextBoxColumn.ReadOnly = true;
@@ -190,8 +199,8 @@
             // nomUSERWORKDataGridViewTextBoxColumn
             // 
             this.nomUSERWORKDataGridViewTextBoxColumn.DataPropertyName = "Nom_USER_WORK";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.nomUSERWORKDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.nomUSERWORKDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle11;
             this.nomUSERWORKDataGridViewTextBoxColumn.HeaderText = "Server Name";
             this.nomUSERWORKDataGridViewTextBoxColumn.Name = "nomUSERWORKDataGridViewTextBoxColumn";
             this.nomUSERWORKDataGridViewTextBoxColumn.ReadOnly = true;
@@ -220,7 +229,7 @@
             this.bunifuLabel4.CursorType = null;
             this.bunifuLabel4.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 15.75F);
             this.bunifuLabel4.ForeColor = System.Drawing.Color.SlateBlue;
-            this.bunifuLabel4.Location = new System.Drawing.Point(21, 86);
+            this.bunifuLabel4.Location = new System.Drawing.Point(21, 102);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel4.Size = new System.Drawing.Size(127, 28);
@@ -232,7 +241,7 @@
             // Servercombobox
             // 
             this.Servercombobox.FormattingEnabled = true;
-            this.Servercombobox.Location = new System.Drawing.Point(848, 57);
+            this.Servercombobox.Location = new System.Drawing.Point(848, 73);
             this.Servercombobox.Name = "Servercombobox";
             this.Servercombobox.Size = new System.Drawing.Size(157, 21);
             this.Servercombobox.TabIndex = 34;
@@ -242,7 +251,7 @@
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
             this.bunifuLabel3.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(795, 56);
+            this.bunifuLabel3.Location = new System.Drawing.Point(795, 72);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(46, 23);
@@ -256,7 +265,7 @@
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
             this.bunifuLabel2.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel2.Location = new System.Drawing.Point(476, 56);
+            this.bunifuLabel2.Location = new System.Drawing.Point(476, 72);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(30, 23);
@@ -283,7 +292,7 @@
             this.cancelreglementbtn.IdleFillColor = System.Drawing.Color.White;
             this.cancelreglementbtn.IdleForecolor = System.Drawing.Color.Red;
             this.cancelreglementbtn.IdleLineColor = System.Drawing.Color.Red;
-            this.cancelreglementbtn.Location = new System.Drawing.Point(1127, 87);
+            this.cancelreglementbtn.Location = new System.Drawing.Point(1127, 103);
             this.cancelreglementbtn.Margin = new System.Windows.Forms.Padding(5);
             this.cancelreglementbtn.Name = "cancelreglementbtn";
             this.cancelreglementbtn.Size = new System.Drawing.Size(171, 41);
@@ -307,7 +316,7 @@
             this.Reglementdate.Icon = ((System.Drawing.Image)(resources.GetObject("Reglementdate.Icon")));
             this.Reglementdate.IconColor = System.Drawing.Color.DarkViolet;
             this.Reglementdate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.Reglementdate.Location = new System.Drawing.Point(521, 51);
+            this.Reglementdate.Location = new System.Drawing.Point(521, 67);
             this.Reglementdate.MinimumSize = new System.Drawing.Size(217, 32);
             this.Reglementdate.Name = "Reglementdate";
             this.Reglementdate.Size = new System.Drawing.Size(217, 32);
@@ -337,7 +346,7 @@
             this.CancelReglementFilterbtn.IconVisible = true;
             this.CancelReglementFilterbtn.IconZoom = 40D;
             this.CancelReglementFilterbtn.IsTab = false;
-            this.CancelReglementFilterbtn.Location = new System.Drawing.Point(1186, 51);
+            this.CancelReglementFilterbtn.Location = new System.Drawing.Point(1186, 67);
             this.CancelReglementFilterbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelReglementFilterbtn.Name = "CancelReglementFilterbtn";
             this.CancelReglementFilterbtn.Normalcolor = System.Drawing.Color.Transparent;
@@ -376,7 +385,7 @@
             this.ReglementFilterbtn.IconVisible = true;
             this.ReglementFilterbtn.IconZoom = 40D;
             this.ReglementFilterbtn.IsTab = false;
-            this.ReglementFilterbtn.Location = new System.Drawing.Point(1067, 51);
+            this.ReglementFilterbtn.Location = new System.Drawing.Point(1067, 67);
             this.ReglementFilterbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReglementFilterbtn.Name = "ReglementFilterbtn";
             this.ReglementFilterbtn.Normalcolor = System.Drawing.Color.Transparent;
@@ -413,7 +422,7 @@
             this.Datecheckbox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.Datecheckbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Datecheckbox.CustomCheckmarkImage = null;
-            this.Datecheckbox.Location = new System.Drawing.Point(747, 56);
+            this.Datecheckbox.Location = new System.Drawing.Point(747, 72);
             this.Datecheckbox.MinimumSize = new System.Drawing.Size(17, 17);
             this.Datecheckbox.Name = "Datecheckbox";
             this.Datecheckbox.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(69)))), ((int)(((byte)(155)))));
@@ -466,7 +475,7 @@
             this.Servercheckbox.CheckState = Bunifu.UI.WinForms.BunifuCheckBox.CheckStates.Unchecked;
             this.Servercheckbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Servercheckbox.CustomCheckmarkImage = null;
-            this.Servercheckbox.Location = new System.Drawing.Point(1011, 56);
+            this.Servercheckbox.Location = new System.Drawing.Point(1011, 72);
             this.Servercheckbox.MinimumSize = new System.Drawing.Size(17, 17);
             this.Servercheckbox.Name = "Servercheckbox";
             this.Servercheckbox.OnCheck.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(69)))), ((int)(((byte)(155)))));
@@ -501,11 +510,89 @@
             this.Servercheckbox.ThreeState = false;
             this.Servercheckbox.ToolTipText = null;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(24)))), ((int)(((byte)(36)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblusername);
+            this.panel1.Controls.Add(this.home);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.close);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.panel1.Location = new System.Drawing.Point(14, 8);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1286, 36);
+            this.panel1.TabIndex = 59;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(573, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 25);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Reglement";
+            // 
+            // lblusername
+            // 
+            this.lblusername.AutoSize = true;
+            this.lblusername.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusername.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lblusername.Location = new System.Drawing.Point(144, 10);
+            this.lblusername.Name = "lblusername";
+            this.lblusername.Size = new System.Drawing.Size(136, 17);
+            this.lblusername.TabIndex = 6;
+            this.lblusername.Text = "(ELQESSOUAR TARIQ)";
+            // 
+            // home
+            // 
+            this.home.BackColor = System.Drawing.Color.Transparent;
+            this.home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.home.Image = ((System.Drawing.Image)(resources.GetObject("home.Image")));
+            this.home.Location = new System.Drawing.Point(8, 3);
+            this.home.Name = "home";
+            this.home.Size = new System.Drawing.Size(29, 29);
+            this.home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.home.TabIndex = 2;
+            this.home.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(38, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ESTA Coffee";
+            // 
+            // close
+            // 
+            this.close.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.close.BackColor = System.Drawing.Color.Transparent;
+            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.close.Image = ((System.Drawing.Image)(resources.GetObject("close.Image")));
+            this.close.Location = new System.Drawing.Point(1252, 7);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(29, 20);
+            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close.TabIndex = 0;
+            this.close.TabStop = false;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // Reglement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1312, 660);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Servercheckbox);
             this.Controls.Add(this.Datecheckbox);
             this.Controls.Add(this.CancelReglementFilterbtn);
@@ -517,12 +604,17 @@
             this.Controls.Add(this.bunifuLabel3);
             this.Controls.Add(this.bunifuLabel2);
             this.Controls.Add(this.Reglementdate);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Reglement";
             this.Text = "Reglement";
             this.Load += new System.EventHandler(this.Reglement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ReglementDatagrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reglementMoreBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBTD_CoffeeManagement)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.home)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -552,5 +644,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn statutDataGridViewTextBoxColumn;
         private Bunifu.UI.WinForms.BunifuCheckBox Datecheckbox;
         private Bunifu.UI.WinForms.BunifuCheckBox Servercheckbox;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblusername;
+        private System.Windows.Forms.PictureBox home;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox close;
     }
 }

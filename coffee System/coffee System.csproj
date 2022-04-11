@@ -141,16 +141,34 @@
     <Compile Include="billProduct.Designer.cs">
       <DependentUpon>billProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="btnAll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="btnAll.Designer.cs">
+      <DependentUpon>btnAll.cs</DependentUpon>
+    </Compile>
     <Compile Include="btnCategorit.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="btnCategorit.Designer.cs">
       <DependentUpon>btnCategorit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Categorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorie.designer.cs">
+      <DependentUpon>Categorie.cs</DependentUpon>
+    </Compile>
     <Compile Include="CoffeeManagement_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CoffeeManagement_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Serveur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Serveur.designer.cs">
+      <DependentUpon>Serveur.cs</DependentUpon>
     </Compile>
     <Compile Include="Credit.cs">
       <SubType>Form</SubType>
@@ -178,7 +196,21 @@
     <Compile Include="Items\prd.Designer.cs">
       <DependentUpon>prd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login1.designer.cs">
+      <DependentUpon>Login1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login2.designer.cs">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Operations.cs" />
+    <Compile Include="Operations_reda.cs" />
+    <Compile Include="Operation_tariq.cs" />
     <Compile Include="Panier.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -241,6 +273,12 @@
     <Compile Include="tableaubord.Designer.cs">
       <DependentUpon>tableaubord.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
     <Compile Include="wifiFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,8 +294,17 @@
     <EmbeddedResource Include="billProduct.resx">
       <DependentUpon>billProduct.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="btnAll.resx">
+      <DependentUpon>btnAll.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="btnCategorit.resx">
       <DependentUpon>btnCategorit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorie.resx">
+      <DependentUpon>Categorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Serveur.resx">
+      <DependentUpon>Serveur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Credit.resx">
       <DependentUpon>Credit.cs</DependentUpon>
@@ -267,6 +314,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items\prd.resx">
       <DependentUpon>prd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login1.resx">
+      <DependentUpon>Login1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login2.resx">
+      <DependentUpon>Login2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panier.resx">
       <DependentUpon>Panier.cs</DependentUpon>
@@ -307,6 +360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="tableaubord.resx">
       <DependentUpon>tableaubord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="wifiFrom.resx">
       <DependentUpon>wifiFrom.cs</DependentUpon>

@@ -17,10 +17,10 @@ namespace coffee_System
             InitializeComponent();
         }
         public static long ID;
-        public static int id_admin=3;
+        public static long id_admin;
         public static int id_server ;
         public static string montant;
-        public static string status = "admin";
+        public static string status;
         public static bool filter = false;
         private void Reglerbtn_Click(object sender, EventArgs e)    
         {
@@ -34,8 +34,12 @@ namespace coffee_System
         {
             // TODO: This line of code loads data into the 'dBTD_CoffeeManagement.CREDIT_DGINFO' table. You can move, or remove it, as needed.
             this.cREDIT_DGINFOTableAdapter.Fill(this.dBTD_CoffeeManagement.CREDIT_DGINFO);
+           
+            id_admin = Program.idUser;
+            status = Program.statut;
             filter = false;
-          
+            //lblusername.Text = Operations.getNameUser(Program.idUser);
+            //load servers combobox
             Servercombobox.DataSource = Operation_tariq.GetAllservers();
             Servercombobox.DisplayMember = "Nom_USER_WORK";
             Servercombobox.ValueMember = "Nom_USER_WORK";
@@ -113,6 +117,15 @@ namespace coffee_System
         public void refreshCredit()
         {
             this.cREDIT_DGINFOTableAdapter.Fill(this.dBTD_CoffeeManagement.CREDIT_DGINFO);
+        }
+        private void close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void CreditDatagrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
